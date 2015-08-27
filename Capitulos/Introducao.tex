@@ -37,19 +37,19 @@ A troca de informações é um mecanismo fundamental para que o reuso de conheci
 % FF: neste parágrafo seria melhor dar um exemplo concreto mesmo, mas por enquanto deixa assim.
 % IM: posso dar esse exemplo abstrato acima e um concreto abaixo?
 
-% IGOR: REVISAR A PARTIR DAQUI
-
-É comum também desenvolvedores implementarem funcionalidades semelhantes em diferentes contextos usando abordagens ad-hoc~\cite{SangMok2011}.
+Com a falta de uma boa gerência de conhecimento, é comum desenvolvedores implementarem funcionalidades semelhantes em diferentes contextos usando abordagens ad-hoc~\cite{SangMok2011}. Essas novas implementações, principalmente se feitas por desenvolvedores menos experientes, tendem a ser menos otimizadas e elegantes que soluções já previamente implementadas pela equipe, podendo gerar um débito técnico a longo prazo.
 % FF: A sentença acima não está clara.
-Nesse caso, desenvolvedores mais experientes em um determinado projeto tendem a atuar como mentores~\cite{CubraniC2004} e tal ato, como atividade de gerência de conhecimento, tende a consumir recursos~\cite{Wiig2003}.\ignore{FONTE 4} Muitas das interações entre desenvolvedores são informais e não há registro que possa ser consultado para propocionar o reuso do conhecimento trocado~\cite{Olson2000}. Um agravante tipicamente é a frequente rotatividade de membros em equipes. Nesses casos, a saída de um membro da equipe que detém determinado conhecimento pode prejudicar toda organização. De fato, a falta de uma abordagem mais sistemática para proporcionar o reuso de conhecimento pode estar associada ao fracasso de projetos em organizações~\cite{Hall2008}.
+% IM: Adicionei uma frase depois para ver se fica mais clara. Procurei não mexer na frase em si por ser uma citação.
+
+Desenvolvedores mais experientes em um determinado projeto tendem a atuar como mentores~\cite{CubraniC2004} e tal ato, como atividade de gerência de conhecimento, tende a consumir recursos~\cite{Wiig2003}.\ignore{FONTE 4 - COMEÇO} Um dos pilares da gerência de conhecimento é a melhoria da produtividade através do compartilhamento e transferência eficiente de conhecimento, que tende a consumir tempo e as vezes até impossível de se realizar. \ignore{FONTE 4 - FIM}
+Muitas das interações entre desenvolvedores são informais e não há registro que possa ser consultado para propocionar o reuso do conhecimento trocado~\cite{Olson2000}. Um agravante tipicamente é a frequente rotatividade de membros em equipes. Nesses casos, a saída de um membro da equipe que detém determinado conhecimento pode prejudicar toda organização. De fato, a falta de uma abordagem mais sistemática para proporcionar o reuso de conhecimento pode estar associada ao fracasso de projetos em organizações~\cite{Hall2008}.
 % FONTE 4 - One of the cornerstones of KM is improving productivity by effective sharing and transfer of knowledge, which tends to be time-consuming and often impossible [21] - 05071412.pdf.
+% IM- TRADUÇÃO:
+% Um dos pilares da gerência de conhecimento é a melhoria da produtividade através do compartilhamento e transferência eficiente de conhecimento, que tende a consumir tempo e as vezes até impossível de se realizar.
 
 %-------
 
-% FF: comentei o parágrafo abaixo porque você já está mencionando a mesma coisa acima.
-%Além disso, existe o fator da rotatividade de membros em equipes, sempre associado a custos de transferência de conhecimento e treinamento~\cite{Hall2008}, possuindo relação com sucesso ou fracasso de projetos de software~\cite{Hall2008}.
-
-Assim, a elaboração de uma ferramenta capaz de agregar referências de código e tarefas a soluções pode trazer enormes benefícios a equipes de desenvolvimento~\cite{CubraniC2004}. A ferramenta atua como um catálogo, agregando referências de código, informações externas e comentários fornecidos por desenvolvedores da equipe com o intuito de auxiliar outros desenvolvedores a buscar em fontes da própria equipe como se deram implementações de funcionalidades semelhantes às que já foram feitas em outros projetos.
+Assim, a elaboração de uma ferramenta capaz de agregar referências de código e tarefas a soluções pode trazer enormes benefícios a equipes de desenvolvimento~\cite{CubraniC2004}. A ferramenta atua como um catálogo, agregando referências de código, informações externas e comentários fornecidos por desenvolvedores da equipe com o intuito de auxiliar outros desenvolvedores a buscar em fontes da própria equipe como se deram implementações de funcionalidades já feitas em outros projetos.
 
 Segue um exemplo de uso da ferramenta: Um determinado desenvolvedor X, experiente dentro de sua equipe, percebe que muitos membros novatos procuram sua ajuda para implementar uma funcionalidade de exportação de uma página web para um documento em formato PDF. X então pode fazer uso da ferramenta, para registrar como se realiza a implementação de tal funcionalidade solicitada. Ele informa um título, descrição curta (para facilitar futuras buscas) e uma descrição de como se dá tal implementação. Como ilustração em formato de código, o desenvolvedor pode utilizar de links de trechos de código disponívels artefatos de código já implementados pela sua equipe. Esses links são renderizados no editor de texto, sem a necessidade de X copiar e colar o código em si dentro do editor. X também pode complementar sua descrição adicionando links para outras páginas web (respostas de sites como Stack Overflow, outros tutoriais, etc...) em forma de anexo da documentação. Por fim, X informa tags relevantes ao artefato que está produzindo, facilitando a sua recuperação por parte de outros membros de sua equipe.
 
@@ -58,6 +58,14 @@ Outros desenolvedores, a partir de então, podem recorrer diretamente a ferramen
 Este estudo descreve a elaboração de tal ferramenta com a participação de uma equipe real de desenvolvimento de software. A equipe em questão é a 4Soft\footnote{\url{http://www.4softjr.com.br}}, empresa júnior\footnote{\url{http://en.wikipedia.org/wiki/Junior_enterprise}} dos cursos de Engenharia de Software e Tecnologia da Informação da Universidade Federal do Rio Grande do Norte (UFRN\footnote{\url{http://www.ufrn.br}}). A empresa atua na área de desenvolvimento de software Web para clientes de diversos ramos e é formada exclusivamente por alunos dos cursos de Bacharelado em Engenharia de Software\footnote{\url{http://www.dimap.ufrn.br/pt/graduacao/engenharia-de-software/apresentacao}} e Bacharelado em Tecnologia da Informação\footnote{\url{http://www.imd.ufrn.br/curso_bacharelado.php}} da UFRN.
 
 O estudo também realiza uma análise crítica dos impactos do uso da mesma no contexto de empresa. Dentre os impactos previstos estão a redução da necessidade de mentoria ou consulta para os casos de  reuso de funcionalidades em diferentes contextos. Tais impactos visam contribuir para a redução de gastos de recursos relacionados a tempo de implementação de funcionalidades, esforço de recuperação de informações, orientação de colaboradores e trabalho dos desenvolvedores que atuam como mentores dentro da equipe.
+
+% FF: algumas coisas para você incluir aqui:
+% 1- como será feita esta análise? que métodos de avaliação serão utilizados? (colocar de forma bem resumida)
+% 2- como está organizada a monografia?
+% 3- de onde veio o texto abaixo em inglês? ele está melhor que o em português acima.
+% FF: coloque um .gitignore pra LaTeX e arquivos relacionados? :)
+% In software development, it is common for a member of the team to implement a feature very similar to one that was already done by a teammate. In some cases, that is a cumbersome task. Searching through documentation and code, as well as asking other teammates can be time and resource demanding.
+% We propose a tool that will permit a team to store documentation for features via GitHub issues and comm its merged with other information like Stack Overflow questions, framework or language documentation or even notes written by teammates. This tool will be designed, tested and evaluated by the developers of 4Soft, the Junior Enterprise of Software Engineer of UFRN.
 
 % falta adaptar para a estrutura do TCC
 
