@@ -12,13 +12,60 @@ As etapas do estudo foram:
 
 % REVISAR
 
-Será feita uma busca por aplicações que realizem atividades semelhantes às propostas. Suas limitações serão analisadas pela equipe de pesquisa e um panorama inicial será traçado de modo que a ferramenta proposta possa suprir as necessidades iniciais e as limitações encontradas.
+Foi feita uma busca por aplicações que realizem atividades semelhantes a ferramenta proposta, ou seja, criação e compartilhamento de notas textuais. Dentre as ferramentas encontradas, seguem:
+
+% IM: descobrir como fazer uma lista
+
+- Evernote (https://www.evernote.com/)
+
+Na época da elaboração, era uma das ferramentas mais populares de criação de anotações privadas. Em 2014, atingiu a marca de mais de 100 milhões de usuários\footnote{\url{https://blog.evernote.com/blog/2014/05/13/evernote-reaches-100-million-users/}}. Ele possui um editor de texto com suporte a texto formatado, com listas, \textit{checkboxes}, links, anexos, tabelas. Os documentos criados na ferramenta (que possui clientes web, desktop e para diversas plataformas móveis) podem receber \textit{tags}, e ser colocados em pastas para melhor organização e facilitar sua recuperação.
+
+% IM: Mostrar uma anotação do evernote?
+
+Documentos também podem ser compartilhados diretamente para outros usuários da ferramenta ou através de links públicos (acessíveis para qualquer pessoa).
+
+Dentre suas limitações para o uso para a redação de tutoriais da área de desenvolvimento de código está a falta de suporte a exibição de código com \textit{syntax-highlight}, ou seja, com formatação apropriada.
+
+% IM: Mostrar um exemplo de como código fica no evernote?
+
+- GitHub e GitHub Gists
+
+Apesar de não ser sua principal proposta, o GitHub é muito utilizado por desenvolvedores para anotações, por possuir suporte a uma linguagem de marcação própria, chamada GitHub Flavored Markdown\footnote{\url{https://help.github.com/articles/github-flavored-markdown/}}. Esta linguagem funciona de maneira semelhante outras do mesmo tipo como HTML ou LaTeX, permitindo que seus usuários escrevam textos apenas informando que determinadas seções do texto possuem tal significado como \"Título\", \"Lista"\, entre outros.
+
+Estas anotações normalmente são utilizadas em arquivos \"Leia-me\" de projetos e descrevem informações relevantes sobre estes (instalação, como executar testes, como fazer uso do projeto, etc).
+
+% IM: mostrar um README?
+
+Outra forma de se registrar anotações no GitHub é através de Gists\footnote{\url{https://gist.github.com}}. A comunidade de desenvolvimento de software comumente utiliza estes arquivos para registrar pequenos \textit{snippets} ou \textit{scripts} de código, com pouca ou nenhuma descrição sobre o mesmo.
+
+Gists pertencem a somente um usuário (podendo ser públicos ou privados) e também possuem suporte a GitHub Flavored Markdown.
+
+Vale notar que esta linguagem de marcação possui suporte a \textit{syntax-highlight}, formatando código de maneira clara.
+
+% IM: mostrar um exemplo de código com markdown aqui?
+
+Dentre as limitações das ferramentas acima citadas, está a precária indexação (repositórios do GitHub e Gists não possuem \texit{tags}) dificultando a recuperação de informação relevante ao usuário.
+
+% IM: tá fraca essa parte das limitações?
+
+- Blogs e sites
+
+Uma das maneiras mais populares por desenvolvedores de se compartilhar tutoriais sobre questões de desenvolvimento são os blogs de autoria própria.
+
+Implementados em diversas tecnologias, possuem a vantagem de muitas vezes estarem indexados por ferramentas de busca como Google\footnote{\url{www.google.com}} e Bing\footnote{\url{www.bing.com}}.
+
+Além disso, existem uma série de \texit{plugins} em diversas tecnologias que permitem a escrita de texto tanto em linguagens de marcação como WYSIWYG (\textit{What You See Is What You Get}, ou seja, \"O que você vê é o seu resultado\"), se assemelhando a editores de texto como Microsoft Word\footnote{\url{https://products.office.com/en-us/word}} ou Pages\footnote{\url{http://www.apple.com/mac/pages/}}. Alguns destes \textit{plugins} possuem inclusive suporte a visualização de código com \textit{syntax-highlight}.
+
+Porém, muitas vezes estes \textit{plugins} possuem problemas para renderizar código que foi copiado de alguma outra fonte (como de arquivos de algum repositório do GitHub, por exemplo). Por exemplo, o \textit{plugin} utilizado no website de perguntas e respostas de programação Stack Overflow exige que todo texto que representa código seja identado utilizando quatro espaços. Códigos de aplicações desenvolvidas na linguagem Ruby, por convenção, geralmente estão identados utilizando somente dois espaço. Assim, quando se copia e cola código já pronto desta linguagem, o editor de texto exibe um aviso exigindo a formatação correta do código para renderização correta. O redator então deve, linha por linha, alterar a quantidade de espaços dados, demandando de esforço e tempo.
+
+% IM: dar mais um espaço aqui pra indicar que não faz parte de Blogs e Sites
+
+Dessa forma, levamos em consideração as limitações e pontos fortes de cada uma das ferramentas analisadas durante a elaboração da ferramenta deste trabalho.
 
 \section{Inquérito contextual}
 
 % REVISAR (ADICIONAR ALUNOS DE FERNANDO)
 Entrevistas e seções de \textit{brainstorm} serão feitas com os participantes da empresa júnior mencionada. Será analisado como se dá seu processo de trabalho e como pode se dar o fluxo de atividades na ferramenta. As informações necessárias serão coletadas através de entrevistas e aplicação de questionários de satisfação.
-
 
 % IM: vale a pena deixar?
 % \section{Sessões de interpretação da equipe}
