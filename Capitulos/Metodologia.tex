@@ -14,7 +14,7 @@ Foi feita uma busca por aplicações que realizem atividades semelhantes a ferra
 
 % IM: descobrir como fazer uma lista
 
-- Evernote (https://www.evernote.com/)
+\subsection{Evernote (https://www.evernote.com/)}
 
 Na época da elaboração, era uma das ferramentas mais populares de criação de anotações privadas. Em 2014, atingiu a marca de mais de 100 milhões de usuários\footnote{\url{https://blog.evernote.com/blog/2014/05/13/evernote-reaches-100-million-users/}}. Ele possui um editor de texto com suporte a texto formatado, com listas, \textit{checkboxes}, links, anexos, tabelas. Os documentos criados na ferramenta (que possui clientes web, desktop e para diversas plataformas móveis) podem receber \textit{tags}, e ser colocados em pastas para melhor organização e facilitar sua recuperação.
 
@@ -26,7 +26,7 @@ Dentre suas limitações para o uso para a redação de tutoriais da área de de
 
 % IM: Mostrar um exemplo de como código fica no evernote?
 
-- GitHub e GitHub Gists
+\subsection{GitHub e GitHub Gists}
 
 Apesar de não ser sua principal proposta, o GitHub é muito utilizado por desenvolvedores para anotações, por possuir suporte a uma linguagem de marcação própria, chamada GitHub Flavored Markdown\footnote{\url{https://help.github.com/articles/github-flavored-markdown/}}. Esta linguagem funciona de maneira semelhante a outras do mesmo tipo como HTML ou LaTeX, permitindo que seus usuários escrevam textos apenas informando que determinadas seções do texto possuem tal significado como \"Título\", \"Lista"\, entre outros.
 
@@ -46,7 +46,7 @@ Dentre as limitações das ferramentas acima citadas, está a precária indexaç
 
 % IM: tá fraca essa parte das limitações?
 
-- Blogs e sites
+\subsection{Blogs e sites}
 
 Uma das maneiras mais populares por desenvolvedores de se compartilhar tutoriais sobre questões de desenvolvimento são os blogs de autoria própria.
 
@@ -67,20 +67,22 @@ Entrevistas não estruturadas e seções de \textit{brainstorm} foram feitas com
 
 Pode-se concluir que essas dúvidas geralmente se enquadravam em alguma das seguintes categorias:
 
-% IM: descobrir como fazer uma lista
-1. Como implementar uma determinada funcionalidade.
-2. Qual a melhor biblioteca para realizar determinada função.
-3. Qual era um bom tutorial que ensinava o uso de alguma biblioteca
-4. Como resolver determinado \textit{bug}.
+\begin{enumerate}
+  \item Como implementar uma determinada funcionalidade.
+  \item Qual a melhor biblioteca para realizar determinada função.
+  \item Qual era um bom tutorial que ensinava o uso de alguma biblioteca
+  \item Como resolver determinado \textit{bug}.
+\end{enumerate}
 
 Para todos os casos citados, o fluxo de resolução do problema se dava na maioria dos casos da seguinte forma:
 
-% IM: descobrir como fazer uma lista numerada
-1. O desenvolvedor comunicava o problema (para todos os membros ou somente um) no \textit{chat} utilizado pela equipe.
-2. Para os casos 1 e 4, os desenvolvedores apontavam um ou mais trechos de código da equipe que implementava corretamente a funcionalidade proposta. Para o caso 2, havia uma discussão a respeito do contexto da aplicação a ser desenvolvida e um se chegava a um consenso sobre qual a melhor biblioteca para resolver o problema mencionado. Para o caso 3, um ou mais links eram disponibilizados.
-3. O desenvolvedor que comunicou o problema tentava implementar a funcionalidade utilizando as recomendações oferecidas.
-4. Caso novas dúvidas surgissem durante a implementação, os demais membros da equipe tentavam dar recomendações mais precisas ou oferecer outros exemplos e links úteis.
-5. O problema era solucionado.
+\begin{enumerate}
+  \item O desenvolvedor comunicava o problema (para todos os membros ou somente um) no \textit{chat} utilizado pela equipe.
+  \item Para os casos 1 e 4, os desenvolvedores apontavam um ou mais trechos de código da equipe que implementava corretamente a funcionalidade proposta. Para o caso 2, havia uma discussão a respeito do contexto da aplicação a ser desenvolvida e um se chegava a um consenso sobre qual a melhor biblioteca para resolver o problema mencionado. Para o caso 3, um ou mais links eram disponibilizados.
+  \item O desenvolvedor que comunicou o problema tentava implementar a funcionalidade utilizando as recomendações oferecidas.
+  \item Caso novas dúvidas surgissem durante a implementação, os demais membros da equipe tentavam dar recomendações mais precisas ou oferecer outros exemplos e links úteis.
+  \item O problema era solucionado.
+\end{enumerate}
 
 Para casos em a resolução problema encontrado não era de conhecimento de nenhum membro da equipe (seja por falta de contato com o contexto ou até mesmo por esquecimento), o desenvolvedor realizava pesquisas em ferramentas de busca para encontrar tutoriais ou fóruns de discussão que o ajudassem a resolver o problema.
 
@@ -90,10 +92,11 @@ Observou-se também que era frequente que a mesma pergunta fosse feita por um ou
 
 Desta etapa, concluiu-se que a ferramenta proposta deveria ser concebida levando em conta que:
 
-% IM: descobrir como fazer uma lista
-* Exemplos de código da própria equipe são importantes para a resolução de uma dúvida.
-* Um bom sistema de recuperação deve existir, pois desenvolvedores apresentam as mesmas dúvidas mais de uma vez.
-* Links de tutoriais já prontos devem ser levados em consideração.
+\begin{itemize}
+  \item Exemplos de código da própria equipe são importantes para a resolução de uma dúvida.
+  \item Um bom sistema de recuperação deve existir, pois desenvolvedores apresentam as mesmas dúvidas mais de uma vez.
+  \item Links de tutoriais já prontos devem ser levados em consideração.
+\end{itemize}
 
 % IM: vale a pena deixar essa parte abaixo?
 
