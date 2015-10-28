@@ -60,12 +60,26 @@ Dessa forma, levamos em consideração as limitações e pontos fortes de cada u
 
 \section{Inquérito contextual}
 
-% Falar do contexto do estudo (p.ex 4Soft)
+% Inserir texto aqui
 
-Entrevistas não estruturadas e seções de \textit{brainstorm} foram feitas com os autores e os participantes da empresa júnior mencionada. Além disso, por ser membro da empresa, pode observar o funcionamento interno da equipe. Procurou-se entender como se dava o fluxo da resolução de uma dúvida que algum desenvolvedor daquele contexto apresente. Pôde-se concluir que essas dúvidas geralmente se enquadravam em alguma das seguintes categorias:
+\subsection{Contexto}
 
-% Como você inferiu as categorias abaixo?
-% Procurar referências (p.ex. Treude) sobre tipos de questões do SO
+Para a elaboração da ferramenta, houve participação da equipe de desenvolvedores da empresa júnior\footnote{\url{http://en.wikipedia.org/wiki/Junior_enterprise}} 4Soft \footnote{\url{http://www.4softjr.com.br}}. A empresa é vinculada aos curstos de Bacharelado em Engenharia de Software\footnote{\url{http://www.dimap.ufrn.br/pt/graduacao/engenharia-de-software/apresentacao}} e Bacharelado em Tecnologia da Informação\footnote{\url{http://www.imd.ufrn.br/curso_bacharelado.php}} da Universidade Federal do Rio Grande do Norte (UFRN\footnote{\url{http://www.ufrn.br}}). A empresa atua na área de desenvolvimento de software web para clientes de diversos ramos (em geral pequenos e médios negócios) e é formada exclusivamente por alunos dos cursos citados.
+
+Um dos autores do trabalho atua na empresa a 3 anos e meio, atuando em atividades de gerência de equipes e mentoria de novos membros, além de na própria área de desenvolvimento de software. Nesse período, passaram pela empresa cerca de dezessete desenvolvedores com nível de conhecimento variado. Participaram do estudo oito desenvolvedores com experiência em média de média anos na empresa.
+
+% IM: Fernando, preferi nesse ponto utilizar a disciplina de web da qual fiz parte como referência. Menciono a outra quando falar da avaliação da ferramenta em si.
+
+Além disso, foi analisado o chat utilizado por uma turma de Desenvolvimento de Sistemas Web ofertada no primeiro semestre de 2014 para alunos dos cursos de Bacharelado em Engenharia de Software e Bacharelado em Ciência da Computação. A turma possuia um total de vinte e cinco alunos e seu projeto final envolvia a participação de todos colaborativamente sobre um mesmo projeto. A maioria dos alunos possuia pouca ou nenhuma experiência com a tecnologia utilizada na disciplina.
+
+% IM: Tá muito crua essa parte acima?
+
+\subsection{Inquérito}
+% IM: Coloco este título mesmo?
+
+Entrevistas não estruturadas e seções de \textit{brainstorm} foram feitas com os autores e os participantes da empresa júnior mencionada. Além disso, por ser membro da empresa, um dos autores pôde observar o funcionamento interno da equipe. Procurou-se entender como se dava o fluxo da resolução de uma dúvida que algum desenvolvedor daquele contexto apresente.
+
+Foi feita a análise das perguntas postadas no chat utilizado pela empresa no último ano bem como o chat utilizado pelos alunos da disciplina de Desenvolvimento Web. Pôde-se concluir que as dúvidas postadas geralmente se enquadravam em alguma das seguintes categorias:
 
 \begin{enumerate}
   \item Como implementar uma determinada funcionalidade.
@@ -74,7 +88,32 @@ Entrevistas não estruturadas e seções de \textit{brainstorm} foram feitas com
   \item Como resolver determinado \textit{bug}.
 \end{enumerate}
 
-Para todos os casos citados, o fluxo de resolução do problema se dava na maioria dos casos da seguinte forma:
+% IM: descobrir como fazer essa citação
+Estas categorias se enquadram dentro das cartegorias também encontradas por Treude et al (2011)~\cite{Treude2011} em seu estudo sobre como desenvolvedores realizam perguntas online.
+
+% IM: Preciso dizer direitinho quais são as categorias e tal ou isso é suficiente?
+
+% how-to. Questions that ask for instructions, e.g. “How to crop image by 160 degrees from center in asp.net”.
+
+% discrepancy. Some unexpected behavior that the person asking the question wants explained, e.g. “iphone - Coremo- tion acceleration always zero”.
+
+% environment. Questions about the environment either during development or after deployment, e.g. “How to use windows emacs as a svn client?”.
+
+% error. Questions that include a specific error message, e.g. “C# Obscure error: file ” could not be refactored”.
+
+% decision help. Asking for an opinion, e.g. “Should a business object know about its corresponding contract object”.
+
+% conceptual. Questions that are abstract and do not have a concrete use case, e.g. “Concept of xml sitemaps”.
+
+% review. Questions that are either implicitly or explic- itly asking for a code review, e.g. “Simple file download via  HTTP - is this sufficient?”.
+
+% non-functional. Questions about non-functional requirements such as performance or memory usage, e.g. “Mac - Max Texture Size for compatibility?”.
+
+% novice. Often explicitly states that the person asking the question is a novice, e.g. “Oracle PL/SQL performance tuning crash course”.
+%
+% noise. Questions not related to programming, e.g. “Apple Developer Program”.
+
+Além da análise das perguntas, foi feita uma análise sobre como estas eram respondidas no mesmo período. Para todos os casos citados, o fluxo de resolução do problema se dava na maioria dos casos da seguinte forma:
 
 % mostrar uma ou mais conversas/discussões de exemplo
 
@@ -99,9 +138,6 @@ Desta etapa, concluiu-se que a ferramenta proposta deveria ser concebida levando
   \item Um bom sistema de recuperação deve existir, pois desenvolvedores apresentam as mesmas dúvidas mais de uma vez.
   \item Links de tutoriais já prontos devem ser levados em consideração.
 \end{itemize}
-
-% IM: Fernando, devo falar sobre suas disciplinas aqui? Posso dizer um relato das que participei
-% Sim.
 
 \section{Prototipação e implementação da ferramenta}
 
