@@ -46,7 +46,7 @@ Sobre o elemento Implementação, a próxima subseção o descreve em detalhes.
 Este é o elemento mais importante de um documento e é utilizado para que o usuário descreva um passo-a-passo sobre
 como realizar a implementação de uma funciondalidade, ou deixe registrado determinado procedimento. Dentre suas funcionalidades que permitem um uso aprimorado por parte de equipes de desenvolvimento de software está a importação de código hospedago no GitHub.
 
-Esta importação quando se cola algum link do GitHub dentro do editor de texto deste campo. A seguir está uma descrição sobre os tipos de importações possíveis e seus respectivos resultados.
+Esta importação ocorre quando se cola algum link do GitHub dentro do editor de texto deste campo. A seguir está uma descrição sobre os tipos de importações possíveis e seus respectivos resultados.
 
 % IM: To do
 % IM: To do
@@ -65,6 +65,20 @@ Esta importação quando se cola algum link do GitHub dentro do editor de texto 
 % IM: To do
 % IM: To do
 % IM: To do
+
+\begin{center}
+    \begin{tabular}{| l | l | l |}
+    \hline
+    Tipo da Importação & Exemplo de link & Resultado \\ \hline
+    Arquivo & https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb & Conteúdo Inteiro do Arquivo é importado. \\ \hline
+    Linha de Arquivo & https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb#L1 & Apenas a linha informada é importada. \\ \hline
+    Intervalo de Linhas de Arquivo &https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb#L5-L7 & O conteúdo intervalo entre as inclusivo entre linhas é importado. \\ \hline
+    \textit{Commit} &  https://github.com/coopera/that-s-the-way-you-do-it/commit/d7f365db9777b4cb6e1c5799a2e431c58aaf3a19 & Um \textit{diff} contendo o conteúdo adicionado e removido no \texit{commit} é importado. \\ \hline
+    \textit{Pull Request} & https://github.com/coopera/that-s-the-way-you-do-it/pull/7 & Um \textit{diff} contendo o conteúdo adicionado e removido em todos os \texit{commits} do \textit{pull request} é importado.  \\ \hline
+    \end{tabular}
+\end{center}
+
+% IM: Adicionar exemplos de cada um
 
 Todo código importado para aplicação já vem formatado na linguagem de marcação utilizada. Caso o arquivo importado seja de uma extensão conhecida, é adicionada a marcação para código da linguagem referente àquela extensão. Além disso, o link original colado é mantido para que futuros usuários que consultem o documento possam acessar o código disponível no código diretamente da sua fonte no GitHub.
 
