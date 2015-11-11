@@ -66,35 +66,70 @@ Esta importação quando se cola algum link do GitHub dentro do editor de texto 
 % IM: To do
 % IM: To do
 
-Todo código importado para aplicação já vem formatado na linguagem de marcação utilizada. Caso o arquivo importado seja de uma extensão conhecida, é adicionada a marcação para código da linguagem referente àquela extensão.
+Todo código importado para aplicação já vem formatado na linguagem de marcação utilizada. Caso o arquivo importado seja de uma extensão conhecida, é adicionada a marcação para código da linguagem referente àquela extensão. Além disso, o link original colado é mantido para que futuros usuários que consultem o documento possam acessar o código disponível no código diretamente da sua fonte no GitHub.
+
+O código importado pode ser livremente modificado tendo em vista de que é texto-puro.
+
+% IM: falar das vantagens disso? /\
 
 Sobre a linguagem de marcação utilizada, a próxima subseção a descreve, bem como suas vantagens para o contexto.
 
-\subsection{Markdown}
+\subsection{Suporte a Markdown}
+
+Markdown é uma linguagem de marcação amplamente utilizada na web atualmente. Possui sintaxe simples e sites já utilizados por desenvolvedores de software já a utilizam em seus campos textuais, como o próprio GitHub e Stack Overflow.
+
+Foi optado por adicionar suporte a tal linguagem para permitir os autores dos documentos pudessem formatar seus textos com cabeçalhos, listas, tabelas, entre outros elementos. Assim, aumentando a clareza e poder de expressão dos documentos criados.
+
 \subsection{Exibição do Documento}
+
+Uma vez que o documento é criado, sua visualização fica disponível para todos os usuários. As imagens a seguir mostram como um documento fica exibido dentro da aplicação.
 
 https://www.dropbox.com/s/dh6fao0hidf6dxw/Screenshot%202015-11-11%2013.33.45.png?dl=0
 
 https://www.dropbox.com/s/m4x930cld84ga13/Screenshot%202015-11-11%2013.34.03.png?dl=0
 
+Enfatiza-se que o elemento de implementação é propriamente renderizado de acordo com a marcação utilizada pelo autor.
+
 \section{Recuperação de Documentos}
 
+Todos os documentos da aplicação são rastreáveis por qualquer desenvolvedor. Existem duas formas de fazer esta busca.
+
 \subsection{Através de Tags}
+
+Ao se clicar em uma tag de um documento ou em uma tag presente na lista de tags que se encontra ao fim da lista de documentos, é possível se recuperar todos os documentos que apresentam aquela tag.
+
 \subsection{Através de Atributos}
-% falar do "your twydies"
+
+Utilizando a barra de busca que se encontra na página que lista todos os documentos da aplicação, é possível realizar uma busca textual que recupera documentos que apresentem o texto informado nos seguintes elementos: Título, Descrição, Implementação ou Links Relacionados.
+
+Além disso, é possível visualizar todos os documentos criados por um usuário ao se clicar no avatar do mesmo em qualquer tela do sistema.
+
+https://www.dropbox.com/s/umzjanf5442zeai/Screenshot%202015-11-11%2015.03.38.png?dl=0
+
+ou
+
+https://www.dropbox.com/s/9qltf1b0chevyu8/Screenshot%202015-11-11%2015.03.48.png?dl=0
 
 \section{Login com GitHub}
 
-Para que os usuários possam importar informações de repositórios privados, é necessário que eles façam login [...]
-% falar tbm da identificacao
-% falar do your twydies
+Para que desenvolvedores sejam identificados como autores dos documentos que criarem, é necessário façam login na aplicação com sua conta do GitHub. Isso também os permite importar código de repositórios privados para dentro da aplicação, tendo em vista que o GitHub exige autorização do próprio usuário para fornecer código privado.
+
+Além disso, usuários logados podem utilizar a funcionalidade de ``Curtir'' documentos, descrita na próxima seção.
 
 \section{"Curtir" Documentos}
 
-to do
-% \subsubsection
+Usuários autenticados podem utilizar esta funcionalidade, que permite adicionar um ``curtida'' a um documento. Ao fazer isso, todos os outros usuários da aplicação podem ver que aquele desenvolvedor ``curtiu'' aquele documento tanto na página do documento em si quando na página de listagem de documentos.
 
-Limitações da Ferramenta
+https://www.dropbox.com/s/zhvxgg3ryh1x96x/Screenshot%202015-11-11%2015.32.12.png?dl=0
 
-% nao importa código de branches
-% nao liga para mudança nos arquivos
+https://www.dropbox.com/s/xlrj1745vd3baqm/Screenshot%202015-11-11%2015.32.54.png?dl=0
+
+Esta funcionalidade permite ao usuário informar que o documento curtido foi útil para ele de alguma forma ou que pode ser útil para outros usuários.
+
+\section{"Limitações da Ferramenta"}
+
+A aplicação ainda possui algumas limitações em suas funcionalidades. A respeito da importação, a ferramenta ainda não suporta links de código que se encontram em outros ramos (\textit{branches}) de desenvolvimento.
+
+Além disso, a ferramenta não trata mudanças que possam ter ocorrido na fonte do código importado. Ou seja, uma vez importado, mudanças ocorridas no código disponível no GitHub não se refletem na aplicação.
+
+% IM: falar das vantagens e desvantagens? /\
