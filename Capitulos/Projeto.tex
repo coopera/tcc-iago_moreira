@@ -6,26 +6,26 @@ Com base nos requisitos então elicitados, pôde-se ter uma noção clara de com
 
 Na tela inicial da aplicação é possível ver uma lista com todos os documentos já criados. Cada documento é exibido com seu título, descrição, lista de \textit{tags} e autor (caso tenha se identificado durante a criação do documento).
 
-https://www.dropbox.com/s/4rput1kdwxxiknj/Screenshot%202015-11-05%2016.08.17.png?dl=0
+https://www.dropbox.com/s/4rput1kdwxxiknj/Screenshot\%202015-11-05\%2016.08.17.png?dl=0
 
 Ao fim da lista de documentos, é possível ver quantos documentos se encontram nela e também uma lista das \textit{tags} presentes, incluindo sua quantidade de ocorrências dentro do grupo de documentos exibidos.
 
-https://www.dropbox.com/s/bdhexdhgwrgo6fl/Screenshot%202015-11-05%2016.08.28.png?dl=0
+https://www.dropbox.com/s/bdhexdhgwrgo6fl/Screenshot\%202015-11-05\%2016.08.28.png?dl=0
 
 ou
 
-https://www.dropbox.com/s/us93gna8m8k4hkb/Screenshot%202015-11-05%2016.08.48.png?dl=0
+https://www.dropbox.com/s/us93gna8m8k4hkb/Screenshot\%202015-11-05\%2016.08.48.png?dl=0
 
 ou
 
-https://www.dropbox.com/s/3wm1tq2s6gqsrnq/Screenshot%202015-11-05%2016.08.59.png?dl=0
+https://www.dropbox.com/s/3wm1tq2s6gqsrnq/Screenshot\%202015-11-05\%2016.08.59.png?dl=0
 
 \section{Criação de um Documento}
 
 Qualquer usuário da aplicação pode criar um documento.
 % IM: tá ruim esse parágrafo, eu sei.
 
-https://www.dropbox.com/s/nii8vbjzphgce0r/Screenshot%202015-11-11%2013.28.10.png?dl=0
+https://www.dropbox.com/s/nii8vbjzphgce0r/Screenshot\%202015-11-11\%2013.28.10.png?dl=0
 
 \subsection{Elementos de um documento}
 
@@ -48,33 +48,15 @@ como realizar a implementação de uma funciondalidade, ou deixe registrado dete
 
 Esta importação ocorre quando se cola algum link do GitHub dentro do editor de texto deste campo. A seguir está uma descrição sobre os tipos de importações possíveis e seus respectivos resultados.
 
-% IM: To do
-% IM: To do
-% IM: To do
-% IM: To do
-% IM: To do
-\begin{itemize}
-  \item Importação de Arquivo
-  \item Importação de Linha Arquivo
-  \item Importação de Intervalos de Linha Arquivo
-  \item Importação de Commit
-  \item Importação de Pull Request
-\end{itemize}
-% IM: To do
-% IM: To do
-% IM: To do
-% IM: To do
-% IM: To do
-
 \begin{center}
-    \begin{tabular}{| l | l | l |}
+    \begin{tabular}{| p{3cm} | p{7cm} | p{5cm} |}
     \hline
     Tipo da Importação & Exemplo de link & Resultado \\ \hline
     Arquivo & https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb & Conteúdo Inteiro do Arquivo é importado. \\ \hline
-    Linha de Arquivo & https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb#L1 & Apenas a linha informada é importada. \\ \hline
-    Intervalo de Linhas de Arquivo &https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb#L5-L7 & O conteúdo intervalo entre as inclusivo entre linhas é importado. \\ \hline
-    \textit{Commit} &  https://github.com/coopera/that-s-the-way-you-do-it/commit/d7f365db9777b4cb6e1c5799a2e431c58aaf3a19 & Um \textit{diff} contendo o conteúdo adicionado e removido no \texit{commit} é importado. \\ \hline
-    \textit{Pull Request} & https://github.com/coopera/that-s-the-way-you-do-it/pull/7 & Um \textit{diff} contendo o conteúdo adicionado e removido em todos os \texit{commits} do \textit{pull request} é importado.  \\ \hline
+    Linha de Arquivo & https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb\#L1 & Apenas a linha informada é importada. \\ \hline
+    Intervalo de Linhas de Arquivo & https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb\#L5-L7 & O conteúdo intervalo entre as inclusivo entre linhas é importado. \\ \hline
+    \textit{Commit} & https://github.com/coopera/that-s-the-way-you-do-it/commit/d7f365db9777b4cb6e1c5799 a2e431c58aaf3a19 & Um \textit{diff} contendo o conteúdo adicionado e removido no \textit{commit} é importado. \\ \hline
+    \textit{Pull Request} & https://github.com/coopera/that-s-the-way-you-do-it/pull/7 & Um \textit{diff} contendo o conteúdo adicionado e removido em todos os \textit{commits} do \textit{pull request} é importado.  \\ \hline
     \end{tabular}
 \end{center}
 
@@ -98,9 +80,9 @@ Foi optado por adicionar suporte a tal linguagem para permitir os autores dos do
 
 Uma vez que o documento é criado, sua visualização fica disponível para todos os usuários. As imagens a seguir mostram como um documento fica exibido dentro da aplicação.
 
-https://www.dropbox.com/s/dh6fao0hidf6dxw/Screenshot%202015-11-11%2013.33.45.png?dl=0
+https://www.dropbox.com/s/dh6fao0hidf6dxw/Screenshot\%202015-11-11\%2013.33.45.png?dl=0
 
-https://www.dropbox.com/s/m4x930cld84ga13/Screenshot%202015-11-11%2013.34.03.png?dl=0
+https://www.dropbox.com/s/m4x930cld84ga13/Screenshot\%202015-11-11\%2013.34.03.png?dl=0
 
 Enfatiza-se que o elemento de implementação é propriamente renderizado de acordo com a marcação utilizada pelo autor.
 
@@ -118,11 +100,11 @@ Utilizando a barra de busca que se encontra na página que lista todos os docume
 
 Além disso, é possível visualizar todos os documentos criados por um usuário ao se clicar no avatar do mesmo em qualquer tela do sistema.
 
-https://www.dropbox.com/s/umzjanf5442zeai/Screenshot%202015-11-11%2015.03.38.png?dl=0
+https://www.dropbox.com/s/umzjanf5442zeai/Screenshot\%202015-11-11\%2015.03.38.png?dl=0
 
 ou
 
-https://www.dropbox.com/s/9qltf1b0chevyu8/Screenshot%202015-11-11%2015.03.48.png?dl=0
+https://www.dropbox.com/s/9qltf1b0chevyu8/Screenshot\%202015-11-11\%2015.03.48.png?dl=0
 
 \section{Login com GitHub}
 
@@ -134,16 +116,20 @@ Além disso, usuários logados podem utilizar a funcionalidade de ``Curtir'' doc
 
 Usuários autenticados podem utilizar esta funcionalidade, que permite adicionar um ``curtida'' a um documento. Ao fazer isso, todos os outros usuários da aplicação podem ver que aquele desenvolvedor ``curtiu'' aquele documento tanto na página do documento em si quando na página de listagem de documentos.
 
-https://www.dropbox.com/s/zhvxgg3ryh1x96x/Screenshot%202015-11-11%2015.32.12.png?dl=0
+https://www.dropbox.com/s/zhvxgg3ryh1x96x/Screenshot\%202015-11-11\%2015.32.12.png?dl=0
 
-https://www.dropbox.com/s/xlrj1745vd3baqm/Screenshot%202015-11-11%2015.32.54.png?dl=0
+https://www.dropbox.com/s/xlrj1745vd3baqm/Screenshot\%202015-11-11\%2015.32.54.png?dl=0
 
 Esta funcionalidade permite ao usuário informar que o documento curtido foi útil para ele de alguma forma ou que pode ser útil para outros usuários.
 
-\section{"Limitações da Ferramenta"}
+\section{Limitações da Ferramenta}
 
 A aplicação ainda possui algumas limitações em suas funcionalidades. A respeito da importação, a ferramenta ainda não suporta links de código que se encontram em outros ramos (\textit{branches}) de desenvolvimento.
 
 Além disso, a ferramenta não trata mudanças que possam ter ocorrido na fonte do código importado. Ou seja, uma vez importado, mudanças ocorridas no código disponível no GitHub não se refletem na aplicação.
 
 % IM: falar das vantagens e desvantagens? /\
+
+
+
+
