@@ -1,6 +1,10 @@
 \chapter{Projeto de Solução}
 
-Com base nos requisitos então elicitados, pôde-se ter uma noção clara de como seria feita a implementação da aplicação e este processo teve início. Ao longo dele, feedback a respeito da estética da ferramenta foi constantemente colhido com a equipe de desenvolvedores da empresa júnior bem como de parceiros do grupo de pesquisa do qual o autor faz parte.
+Com base nos requisitos então elicitados, pôde-se ter uma noção clara de como seria feita a implementação da aplicação e este processo teve início. Ao longo dele, \textit{feedback} a respeito da estética da ferramenta foi constantemente colhido com a equipe de desenvolvedores da empresa júnior bem como de parceiros do grupo de pesquisa do qual o autor faz parte.
+
+O intuito da ferramenta era permitir a criação de referenciais de modo a vincular recursos do repositório do projeto no GitHub\footnote{\url{www.github.com}} (\textit{issues}, \textit{commits}, etc) a requisitos e suas implementações, bem como outros referenciais (\textit{links} para perguntas no Stack Overflow\footnote{\url{www.stackoverflow.com}}, desenhos, por exemplo) de forma a gerar um guia ou tutorial de como realizar tal implementação novamente no futuro. A empresa 4Soft teve participação significativa em todo o estudo, desde a concepção até no uso da ferramenta.
+
+% IM: Acrescentar alunos de fernando ao parágrafo anterior
 
 \section{Listagem de Documentos}
 
@@ -46,6 +50,18 @@ Sobre o elemento Implementação, a próxima subseção o descreve em detalhes.
 Este é o elemento mais importante de um documento e é utilizado para que o usuário descreva um passo-a-passo sobre
 como realizar a implementação de uma funciondalidade, ou deixe registrado determinado procedimento. Dentre suas funcionalidades que permitem um uso aprimorado por parte de equipes de desenvolvimento de software está a importação de código hospedago no GitHub.
 
+% IM: VERIFICAR SE ISSO ESTÁ OK \/
+Nele é possível acessar, por exemplo, cada arquivo de um determinado projeto através de URLs simples e que seguem a própria estrutura de diretórios do projeto em si.
+
+Por exemplo, um arquivo com caminho ``app/models/example.rb'' se encontra URL ``github.com/usuario/projeto/blob/master/app/models/doc.rb''.
+
+O arquivo é exibido utilizando uma formatação própria da linguagem, facilitando sua visualização:
+
+% IM: descobrir como botar imagem
+https://www.dropbox.com/s/qgrnw4s0impnps2/Screenshot\%202015-10-27\%2016.03.45.png?dl=0
+
+% IM: VERIFICAR SE ISSO ESTÁ OK /\
+
 Esta importação ocorre quando se cola algum link do GitHub dentro do editor de texto deste campo. A seguir está uma descrição sobre os tipos de importações possíveis e seus respectivos resultados.
 
 \begin{center}
@@ -70,7 +86,7 @@ O código importado pode ser livremente modificado tendo em vista de que é text
 
 Sobre a linguagem de marcação utilizada, a próxima subseção a descreve, bem como suas vantagens para o contexto.
 
-\subsection{Suporte a Markdown}
+\subsection{Suporte a \textit{Markdown}}
 
 Markdown é uma linguagem de marcação amplamente utilizada na web atualmente. Possui sintaxe simples e sites já utilizados por desenvolvedores de software já a utilizam em seus campos textuais, como o próprio GitHub e Stack Overflow.
 
@@ -90,7 +106,7 @@ Enfatiza-se que o elemento de implementação é propriamente renderizado de aco
 
 Todos os documentos da aplicação são rastreáveis por qualquer desenvolvedor. Existem duas formas de fazer esta busca.
 
-\subsection{Através de Tags}
+\subsection{Através de \textit{Tags}}
 
 Ao se clicar em uma tag de um documento ou em uma tag presente na lista de tags que se encontra ao fim da lista de documentos, é possível se recuperar todos os documentos que apresentam aquela tag.
 
@@ -112,7 +128,7 @@ Para que desenvolvedores sejam identificados como autores dos documentos que cri
 
 Além disso, usuários logados podem utilizar a funcionalidade de ``Curtir'' documentos, descrita na próxima seção.
 
-\section{"Curtir" Documentos}
+\section{``Curtir'' Documentos}
 
 Usuários autenticados podem utilizar esta funcionalidade, que permite adicionar um ``curtida'' a um documento. Ao fazer isso, todos os outros usuários da aplicação podem ver que aquele desenvolvedor ``curtiu'' aquele documento tanto na página do documento em si quando na página de listagem de documentos.
 
@@ -129,7 +145,3 @@ A aplicação ainda possui algumas limitações em suas funcionalidades. A respe
 Além disso, a ferramenta não trata mudanças que possam ter ocorrido na fonte do código importado. Ou seja, uma vez importado, mudanças ocorridas no código disponível no GitHub não se refletem na aplicação.
 
 % IM: falar das vantagens e desvantagens? /\
-
-
-
-

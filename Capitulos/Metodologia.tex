@@ -1,10 +1,8 @@
 \chapter{Métodos}
 
-% REVISAR
-Este trabalho prevê o desenvolvimento da ferramenta de documentação de implementação funcionalidades. Nela, será possível vincular recursos do repositório do projeto no GitHub\footnote{\url{www.github.com}} (\textit{issues}, \textit{commits}, etc) a requisitos e suas implementações, bem como outros referenciais (\textit{links} para perguntas no Stack Overflow\footnote{\url{www.stackoverflow.com}}, desenhos, por exemplo) de forma a gerar um guia ou tutorial de como realizar tal implementação novamente no futuro.
+% IM: Melhorar isso
+Este trabalho prevê o desenvolvimento da ferramenta de documentação de implementação funcionalidades.
 
-% REVISAR (ADICIONAR ALUNOS DE FERNANDO)
-A empresa 4Soft terá participação significativa em todo o estudo, desde a concepção até no uso da ferramenta.
 
 As etapas do estudo foram:
 
@@ -14,13 +12,13 @@ Foi feita uma busca por aplicações que realizem atividades semelhantes a ferra
 
 \subsection{Evernote}
 
-Na época da elaboração, o Evernote\footnote{\url{https://www.evernote.com/}} era uma das ferramentas mais populares de criação de anotações privadas. Em 2014, atingiu a marca de mais de 100 milhões de usuários\footnote{\url{https://blog.evernote.com/blog/2014/05/13/evernote-reaches-100-million-users/}}. Ele possui um editor de texto com suporte a texto formatado, com listas, \textit{checkboxes}, links, anexos, tabelas. Os documentos criados na ferramenta (que possui clientes web, desktop e para diversas plataformas móveis) podem receber \textit{tags}, e ser colocados em pastas para melhor organização e facilitar sua recuperação.
+Na época da elaboração deste trabalho, o Evernote\footnote{\url{https://www.evernote.com/}} era uma das ferramentas mais populares de criação de anotações privadas. Em 2014, atingiu a marca de mais de 100 milhões de usuários\footnote{\url{https://blog.evernote.com/blog/2014/05/13/evernote-reaches-100-million-users/}}. Ele possui um editor de texto com suporte a texto formatado, com listas, \textit{checkboxes}, \textit{\textit{links}}, anexos, tabelas. Os documentos criados na ferramenta (que possui clientes web, desktop e para diversas plataformas móveis) podem receber \textit{tags}, e ser colocados em pastas para melhor organização de modo a facilitar sua recuperação.
 
 % IM: Mostrar uma anotação do evernote?
 
-Documentos também podem ser compartilhados diretamente para outros usuários da ferramenta ou através de links públicos (acessíveis para qualquer pessoa).
+Documentos também podem ser compartilhados diretamente para outros usuários da ferramenta ou através de \textit{links} públicos (acessíveis para qualquer pessoa).
 
-Dentre suas limitações para o uso para a redação de tutoriais da área de desenvolvimento de código está a falta de suporte a exibição de código com \textit{syntax-highlight}, ou seja, com formatação apropriada.
+Dentre suas limitações para o uso para a redação de tutoriais da área de desenvolvimento de código está a falta de suporte a exibição de código com \textit{syntax-highlighting}, ou seja, com formatação apropriada.
 
 % IM: Mostrar um exemplo de como código fica no evernote?
 
@@ -28,7 +26,7 @@ Dentre suas limitações para o uso para a redação de tutoriais da área de de
 
 Apesar de não ser sua principal proposta, o GitHub é muito utilizado por desenvolvedores para anotações, por possuir suporte a uma linguagem de marcação própria, chamada GitHub Flavored Markdown\footnote{\url{https://help.github.com/articles/github-flavored-markdown/}}. Esta linguagem funciona de maneira semelhante a outras do mesmo tipo como HTML ou LaTeX, permitindo que seus usuários escrevam textos apenas informando que determinadas seções do texto possuem tal significado como ``Título'', ``Lista'', entre outros.
 
-Estas anotações normalmente são utilizadas em arquivos ``Leia-me''de projetos e descrevem informações relevantes sobre estes (instalação, como executar testes, como fazer uso do projeto, etc).
+Estas anotações normalmente são utilizadas em arquivos ``Leia-me'' de projetos e descrevem informações relevantes sobre estes (instalação, como executar testes, como fazer uso do projeto, etc).
 
 % IM: mostrar um README?
 
@@ -36,7 +34,7 @@ Outra forma de se registrar anotações no GitHub é através de Gists\footnote{
 
 Gists pertencem a somente um usuário (podendo ser públicos ou privados) e também possuem suporte a GitHub Flavored Markdown.
 
-Vale notar que esta linguagem de marcação possui suporte a \textit{syntax-highlight}, formatando código de maneira clara.
+Vale notar que esta linguagem de marcação possui suporte a \textit{syntax-highlighting}, formatando código de maneira clara.
 
 % IM: mostrar um exemplo de código com markdown aqui?
 
@@ -46,13 +44,13 @@ Dentre as limitações das ferramentas acima citadas, está a precária indexaç
 
 \subsection{Blogs e sites}
 
-Uma das maneiras mais populares por desenvolvedores de se compartilhar tutoriais sobre questões de desenvolvimento são os blogs de autoria própria.
+Uma das maneiras mais populares por desenvolvedores de se compartilhar tutoriais sobre questões de desenvolvimento são os \textit{blogs} de autoria própria.
 
 Implementados em diversas tecnologias, possuem a vantagem de muitas vezes estarem indexados por ferramentas de busca como Google\footnote{\url{www.google.com}} e Bing\footnote{\url{www.bing.com}}.
 
-Além disso, existem uma série de \textit{plugins} em diversas tecnologias que permitem a escrita de texto tanto em linguagens de marcação como WYSIWYG (\textit{What You See Is What You Get}, ou seja, ``O que você vê é o seu resultado''), se assemelhando a editores de texto como Microsoft Word\footnote{\url{https://products.office.com/en-us/word}} ou Pages\footnote{\url{http://www.apple.com/mac/pages/}}. Alguns destes \textit{plugins} possuem inclusive suporte a visualização de código com \textit{syntax-highlight}.
+Além disso, existem uma série de \textit{plugins} em diversas tecnologias que permitem a escrita de texto tanto em linguagens de marcação como WYSIWYG (\textit{What You See Is What You Get}, ou seja, ``O que você vê é o seu resultado''), se assemelhando a editores de texto como Microsoft Word\footnote{\url{https://products.office.com/en-us/word}} ou Pages\footnote{\url{http://www.apple.com/mac/pages/}}. Alguns destes \textit{plugins} possuem inclusive suporte a visualização de código com \textit{syntax-highlighting}.
 
-Porém, muitas vezes estes \textit{plugins} possuem problemas para renderizar código que foi copiado de alguma outra fonte (como de arquivos de algum repositório do GitHub, por exemplo). Por exemplo, o \textit{plugin} utilizado no website de perguntas e respostas de programação Stack Overflow exige que todo texto que representa código seja identado utilizando quatro espaços. Códigos de aplicações desenvolvidas na linguagem Ruby, por convenção, geralmente estão identados utilizando somente dois espaço. Assim, quando se copia e cola código já pronto desta linguagem, o editor de texto exibe um aviso exigindo a formatação correta do código para renderização correta. O redator então deve, linha por linha, alterar a quantidade de espaços dados, demandando de esforço e tempo.
+Porém, muitas vezes estes \textit{plugins} possuem problemas para renderizar código que foi copiado de alguma outra fonte (como de arquivos de algum repositório do GitHub, por exemplo). Por exemplo, o \textit{plugin} utilizado no website de perguntas e respostas de programação Stack Overflow exige que todo texto que representa código seja identado utilizando quatro espaços. Códigos de aplicações desenvolvidas na linguagem Ruby, por convenção de estilo, geralmente estão identados utilizando somente dois espaço. Assim, quando se copia e cola código já pronto desta linguagem, o editor de texto exibe um aviso exigindo a formatação correta do código para renderização correta. O redator então deve, linha por linha, alterar a quantidade de espaços dados, demandando de esforço e tempo.
 
 % IM: dar mais um espaço aqui pra indicar que não faz parte de Blogs e Sites
 
@@ -66,20 +64,20 @@ Dessa forma, levamos em consideração as limitações e pontos fortes de cada u
 
 Para a elaboração da ferramenta, houve participação da equipe de desenvolvedores da empresa júnior\footnote{\url{http://en.wikipedia.org/wiki/Junior_enterprise}} 4Soft\footnote{\url{http://www.4softjr.com.br}}. A empresa é vinculada aos curstos de Bacharelado em Engenharia de Software\footnote{\url{http://www.dimap.ufrn.br/pt/graduacao/engenharia-de-software/apresentacao}} e Bacharelado em Tecnologia da Informação\footnote{\url{http://www.imd.ufrn.br/curso_bacharelado.php}} da Universidade Federal do Rio Grande do Norte (UFRN)\footnote{\url{http://www.ufrn.br}}. A empresa atua na área de desenvolvimento de software web para clientes de diversos ramos (em geral pequenos e médios negócios) e é formada exclusivamente por alunos dos cursos citados.
 
-Um dos autores do trabalho atua na empresa há 3 anos e meio, atuando em atividades de gerência de equipes e mentoria de novos membros, além de na própria área de desenvolvimento de software. Nesse período, passaram pela empresa cerca de dezessete desenvolvedores com nível de conhecimento variado. Participaram do estudo oito desenvolvedores com experiência em média de média anos na empresa.
+O autor do trabalho atua na empresa há três anos e meio, atuando em atividades de gerência de equipes e mentoria de novos membros, além de na própria área de desenvolvimento de software. Nesse período, passaram pela empresa cerca de dezessete desenvolvedores com nível de conhecimento variado. Participaram do estudo oito desenvolvedores com experiência em média de dois anos na empresa.
 
 % IM: Fernando, preferi nesse ponto utilizar a disciplina de web da qual fiz parte como referência. Menciono a outra quando falar da avaliação da ferramenta em si.
 
-Além disso, foi analisado o chat utilizado por uma turma de Desenvolvimento de Sistemas Web ofertada no primeiro semestre de 2014 para alunos dos cursos de Bacharelado em Engenharia de Software e Bacharelado em Ciência da Computação. A turma possuia um total de vinte e cinco alunos e seu projeto final envolvia a participação de todos colaborativamente sobre um mesmo projeto. A maioria dos alunos possuia pouca ou nenhuma experiência com a tecnologia utilizada na disciplina.
+Além disso, o \textit{chat} utilizado por uma turma de Desenvolvimento de Sistemas Web ofertada no primeiro semestre de 2014 para alunos dos cursos de Bacharelado em Engenharia de Software e Bacharelado em Ciência da Computação foi analisado. A turma possuia um total de vinte e cinco alunos e seu projeto final envolvia a participação de todos colaborativamente sobre um mesmo projeto. A maioria dos alunos possuia pouca ou nenhuma experiência com a tecnologia utilizada na disciplina.
 
 % IM: Tá muito crua essa parte acima?
 
 \subsection{Inquérito}
 % IM: Coloco este título mesmo?
 
-Entrevistas não estruturadas e seções de \textit{brainstorm} foram feitas com os autores e os participantes da empresa júnior mencionada. Além disso, por ser membro da empresa, um dos autores pôde observar o funcionamento interno da equipe. Procurou-se entender como se dava o fluxo da resolução de uma dúvida que algum desenvolvedor daquele contexto apresente.
+Entrevistas não estruturadas e seções de \textit{brainstorm} foram feitas pelo autor com cinco participantes da empresa júnior mencionada. Além disso, por ser membro da empresa, o autor pôde observar o funcionamento interno da equipe. Procurou-se entender como se dava o fluxo da resolução de uma dúvida que algum desenvolvedor apresente.
 
-Foi feita a análise das perguntas postadas no chat utilizado pela empresa no último ano bem como o chat utilizado pelos alunos da disciplina de Desenvolvimento Web. Pôde-se concluir que as dúvidas postadas geralmente se enquadravam em alguma das seguintes categorias:
+Foi feita a análise das perguntas postadas no \textit{chat} utilizado pela empresa no último ano bem como o \textit{chat} utilizado pelos alunos da disciplina de Desenvolvimento Web. Pôde-se concluir que as dúvidas postadas geralmente se enquadravam em alguma das seguintes categorias:
 
 \begin{enumerate}
   \item Como implementar uma determinada funcionalidade.
@@ -89,37 +87,38 @@ Foi feita a análise das perguntas postadas no chat utilizado pela empresa no ú
 \end{enumerate}
 
 % IM: descobrir como fazer essa citação
-Estas categorias se enquadram dentro das dez cartegorias também encontradas por Treude et al~\cite{Treude2011} em seu estudo sobre como desenvolvedores realizam perguntas online.
+Estas categorias se enquadram dentro das dez categorias também encontradas por Treude et al.~\cite{Treude2011} em seu estudo sobre como desenvolvedores realizam perguntas no site de perguntas e respostas Stack Overflow.
 
-Além da análise das perguntas, foi feita uma análise sobre como estas eram respondidas no mesmo período. Para todos os casos citados, o fluxo de resolução do problema se dava na maioria dos casos da seguinte forma:
+Além da análise das perguntas realizadas pelos desenvolvedores, foi feita uma análise sobre como estas eram respondidas no mesmo período. Para todos os casos citados, o fluxo de resolução do problema se dava na maioria dos casos da seguinte forma:
 
 % mostrar uma ou mais conversas/discussões de exemplo
 
+% FF: Trocar para algarismos romanos (i, ii, etc)
 \begin{enumerate}
   \item O desenvolvedor comunicava o problema (para todos os membros ou somente um) no \textit{chat} utilizado pela equipe.
-  \item Para os casos 1 e 4, os desenvolvedores apontavam um ou mais trechos de código da equipe que implementava corretamente a funcionalidade proposta. Para o caso 2, havia uma discussão a respeito do contexto da aplicação a ser desenvolvida e um se chegava a um consenso sobre qual a melhor biblioteca para resolver o problema mencionado. Para o caso 3, um ou mais links eram disponibilizados.
+  \item Para os casos 1 e 4, os desenvolvedores apontavam um ou mais trechos de código da equipe que implementava corretamente a funcionalidade proposta. Para o caso 2, havia uma discussão a respeito do contexto da aplicação a ser desenvolvida e um se chegava a um consenso sobre qual a melhor biblioteca para resolver o problema mencionado. Para o caso 3, um ou mais \textit{links} eram disponibilizados.
   \item O desenvolvedor que comunicou o problema tentava implementar a funcionalidade utilizando as recomendações oferecidas.
-  \item Caso novas dúvidas surgissem durante a implementação, os demais membros da equipe tentavam dar recomendações mais precisas ou oferecer outros exemplos e links úteis.
+  \item Caso novas dúvidas surgissem durante a implementação, os demais membros da equipe tentavam dar recomendações mais precisas ou oferecer outros exemplos e \textit{links} úteis.
   \item O problema era solucionado.
 \end{enumerate}
 
-Para casos em a resolução problema encontrado não era de conhecimento de nenhum membro da equipe (seja por falta de contato com o contexto ou até mesmo por esquecimento), o desenvolvedor realizava pesquisas em ferramentas de busca para encontrar tutoriais ou fóruns de discussão que o ajudassem a resolver o problema.
+Para casos em que a resolução problema encontrado não era de conhecimento de nenhum membro da equipe (seja por falta de contato com o contexto ou até mesmo por esquecimento), o desenvolvedor realizava pesquisas em ferramentas de busca para encontrar tutoriais ou fóruns de discussão que o ajudassem a resolver o problema.
 
 Se tratando de esquecimento, desenvolvedores relataram que era comum que os próprios lembrassem que já enfrentaram determinado problema, mas não se lembram da solução que foi dada para tal. Isso era comum em especial em problemas do tipo 4 (\textit{bugs}).
 
-Observou-se também que era frequente que a mesma pergunta fosse feita por um outro desenvolvedor após certo tempo e respostas semelhantes eram oferecidas (e inclusive os mesmos links eram disponibilizados).
+Observou-se também que era frequente que a mesma pergunta fosse feita por um outro desenvolvedor após certo tempo e respostas semelhantes eram oferecidas (e inclusive os mesmos \textit{links} eram disponibilizados).
 
 Desta etapa, concluiu-se que a ferramenta proposta deveria ser concebida levando em conta que:
 
 \begin{itemize}
   \item Exemplos de código da própria equipe são importantes para a resolução de uma dúvida.
   \item Um bom sistema de recuperação deve existir, pois desenvolvedores apresentam as mesmas dúvidas mais de uma vez.
-  \item Links de tutoriais já prontos devem ser levados em consideração.
+  \item \textit{Links} de tutoriais já prontos devem ser levados em consideração.
 \end{itemize}
 
 \section{Definição dos Requisitos da Ferramenta}
 
-Com base no Inquérito Contextual e Estudo de Aplicações Existentes, os autores puderam elicitar os seguintes requisitos para uma ferramenta que diminua os esforços com mentoria/ resolução de dúvidas de desenvolvedores:
+Com base no Inquérito Contextual e Estudo de Aplicações Existentes, o autor pode elicitar os seguintes requisitos para uma ferramenta que diminua os esforços com mentoria/ resolução de dúvidas de desenvolvedores:
 
 \begin{itemize}
   \item A ferramente deve agir como um catálogo de anotações/ documentos feitos pela equipe.
@@ -128,8 +127,10 @@ Com base no Inquérito Contextual e Estudo de Aplicações Existentes, os autore
   \item Links de tutoriais já prontos devem ser levados em consideração.
 \end{itemize}
 
-Com base nisso, partiu-se para a implementação da ferramenta, denominada Twydi. O detalhamento sobre este processo e das funcionalidades apresentadas por esta se encontram no próximo capítulo.
+Com base nisso, partiu-se para a implementação da ferramenta, denominada Twydi (um acrônimo para ``\textit{That's the Way You Do It}'', em português: ``É assim que se faz''). O detalhamento sobre este processo e das funcionalidades apresentadas por esta se encontram no próximo capítulo.
 
-\section{Implantação e observação do uso da ferramenta}
+% FF: Remover
 
-A ferramenta então foi disponibilzada em dois servidores diferentes: um para uso da empresa júnior e de outros interessados e outro para uso dos alunos da disciplina de Desenvolvimento Colaborativo de Software ocorrida no segundo semestre de 2015. Os artefatos gerados em um servidor não estavam disponíveis no outro.
+% \section{Implantação e observação do uso da ferramenta}
+%
+% A ferramenta então foi disponibilzada em dois servidores diferentes: um para uso da empresa júnior e de outros interessados e outro para uso dos alunos da disciplina de Desenvolvimento Colaborativo de Software ocorrida no segundo semestre de 2015. Os artefatos gerados em um servidor não estavam disponíveis no outro.
