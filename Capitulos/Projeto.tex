@@ -64,7 +64,10 @@ https://www.dropbox.com/s/qgrnw4s0impnps2/Screenshot\%202015-10-27\%2016.03.45.p
 
 Esta importação ocorre quando se cola algum link do GitHub dentro do editor de texto deste campo. A seguir está uma descrição sobre os tipos de importações possíveis e seus respectivos resultados.
 
+\begin{table}[]
 \begin{center}
+    \caption{Tipos de importação suportadas pela aplicação}
+    \label{my-label}
     \begin{tabular}{| p{3cm} | p{7cm} | p{5cm} |}
     \hline
     Tipo da Importação & Exemplo de link & Resultado \\ \hline
@@ -75,7 +78,7 @@ Esta importação ocorre quando se cola algum link do GitHub dentro do editor de
     \textit{Pull Request} & https://github.com/coopera/that-s-the-way-you-do-it/pull/7 & Um \textit{diff} contendo o conteúdo adicionado e removido em todos os \textit{commits} do \textit{pull request} é importado.  \\ \hline
     \end{tabular}
 \end{center}
-
+\end{table}
 % IM: Adicionar exemplos de cada um
 
 Todo código importado para aplicação já vem formatado na linguagem de marcação utilizada. Caso o arquivo importado seja de uma extensão conhecida, é adicionada a marcação para código da linguagem referente àquela extensão. Além disso, o link original colado é mantido para que futuros usuários que consultem o documento possam acessar o código disponível no código diretamente da sua fonte no GitHub.
