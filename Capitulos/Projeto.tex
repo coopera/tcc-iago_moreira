@@ -2,7 +2,7 @@
 
 Com base nos requisitos então elicitados, pôde-se ter uma noção clara de como seria feita a implementação da aplicação e este processo teve início. Ao longo dele, \textit{feedback} a respeito da estética da ferramenta foi constantemente colhido com a equipe de desenvolvedores da empresa júnior bem como de parceiros do grupo de pesquisa do qual o autor faz parte.
 
-O intuito da ferramenta é permitir a criação de documento vinculem recursos do repositório do projeto no GitHub (arquivos, \textit{commits} e \textit{pull requests}), bem como outros referenciais (\textit{links} para perguntas no Stack Overflow, tutoriais ou \textit{blogs}, por exemplo) de forma a gerar um guia ou tutorial de como realizar tal implementação novamente no futuro. Dentro da ferramenta, um documento é chamado de twydi. 
+O intuito da ferramenta é permitir a criação de documento vinculem recursos do repositório do projeto no GitHub (arquivos, \textit{commits} e \textit{pull requests}), bem como outros referenciais (\textit{links} para perguntas no Stack Overflow, tutoriais ou \textit{blogs}, por exemplo) de forma a gerar um guia ou tutorial de como realizar tal implementação novamente no futuro. Dentro da ferramenta, um documento é chamado de twydi.
 
 \section{Listagem de Documentos}
 
@@ -77,6 +77,8 @@ O arquivo é exibido utilizando uma formatação própria da linguagem, facilita
 
 A partir dessa estrutura de URLs, foi elaborado um mecanismo para importar código no editor de texto da implementação toda vez que um \textit{link} do GitHub é colado. Uma descrição sobre os tipos de importações possíveis e seus respectivos resultados encontra-se na Tabela 2.
 
+% IM: Talvez usar fonte menor para os links
+
 \begin{table}[]
 \centering
     \caption{Tipos de importação suportadas pela aplicação}
@@ -84,11 +86,11 @@ A partir dessa estrutura de URLs, foi elaborado um mecanismo para importar códi
     \begin{tabular}{p{3cm} | p{7cm} | p{5cm}}
     \hline
     Tipo da Importação & Exemplo de link & Resultado \\ \hline
-    Arquivo & https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb & Conteúdo Inteiro do Arquivo é importado. \\ \hline
-    Linha de Arquivo & https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb\#L1 & Apenas a linha informada é importada. \\ \hline
-    Intervalo de Linhas de Arquivo & https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb\#L5-L7 & O conteúdo intervalo entre as inclusivo entre linhas é importado. \\ \hline
-    \textit{Commit} & https://github.com/coopera/that-s-the-way-you-do-it/commit/d7f365db9777b4cb6e1c5799 a2e431c58aaf3a19 & Um \textit{diff} contendo o conteúdo adicionado e removido no \textit{commit} é importado. \\ \hline
-    \textit{Pull Request} & https://github.com/coopera/that-s-the-way-you-do-it/pull/7 & Um \textit{diff} contendo o conteúdo adicionado e removido em todos os \textit{commits} do \textit{pull request} é importado.  \\ \hline
+    Arquivo & \url{https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb} & Conteúdo Inteiro do Arquivo é importado. \\ \hline
+    Linha de Arquivo & \url{https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb\#L1} & Apenas a linha informada é importada. \\ \hline
+    Intervalo de Linhas de Arquivo & \url{https://github.com/coopera/that-s-the-way-you-do-it/blob/master/app/models/doc.rb\#L5-L7} & O conteúdo intervalo entre as inclusivo entre linhas é importado. \\ \hline
+    \textit{Commit} & \url{https://github.com/coopera/that-s-the-way-you-do-it/commit/d7f365db9777b4cb6e1c5799 a2e431c58aaf3a19} & Um \textit{diff} contendo o conteúdo adicionado e removido no \textit{commit} é importado. \\ \hline
+    \textit{Pull Request} & \url{https://github.com/coopera/that-s-the-way-you-do-it/pull/7} & Um \textit{diff} contendo o conteúdo adicionado e removido em todos os \textit{commits} do \textit{pull request} é importado.  \\ \hline
 \end{tabular}
 \caption*{fonte: o autor}
 \end{table}
