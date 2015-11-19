@@ -52,7 +52,7 @@ Um documento é composto por 5 elementos, todos informados pelo seu autor:
   \item Título: Título do documento. Deve fornecer uma noção sobre o que aquele documento descreve.
   \item Descrição: Um resumo sobre o que o documento descreve. Descritivo o suficiente para que outros usuários não tenham que ler o documento inteiro para compreender sobre o que ele trata.
   \item Implementação: Procedimento sobre como implementar ou executar a funcionalidade descrita. Possui suporte a linguagem de marcação e importação de código armazenado em repositórios públicos e privados do GitHub.
-  \item Links Relacionados: Lista de links relevantes para o documento, cada um com descrição própria. Podem conter referências utilizadas para elaborar o documento ou material mais avançado sobre o assunto.
+   \item \textit{Links} Relacionados: Lista de \textit{links} relevantes para o documento, cada um com descrição própria. Podem conter referências utilizadas para elaborar o documento ou material mais avançado sobre o assunto.
   \item \textit{Tags}: Lista de \textit{tags} sobre o assunto do documento. Utilizada para facilitar sua recuperação posteriormente tanto pelo autor quanto por outros usuários.
 \end{itemize}
 
@@ -150,19 +150,22 @@ Dessa forma é permitido aos autores maior clareza e poder de expressão com rel
 \subsection{Exibição do Documento}
 
 % CITAR FIGURA X, FIGURA Y
-Uma vez que o documento é criado, sua visualização fica disponível para todos os usuários. As imagens a seguir mostram como um documento fica exibido dentro da aplicação.
+Uma vez que o documento é criado, sua visualização fica disponível para todos os usuários. As figuras \ref{fig:doc-show-1}, \ref{fig:doc-show-2} e \ref{fig:doc-show-3} mostram como um documento fica exibido dentro da aplicação.
 
 \begin{figure}[h]
 	\centering
     \caption{Exibição de documento (início)}
     \includegraphics[width=15cm]{Imagens/print-show-1.png}
+    \label{fig:doc-show-1}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
+
 
 \begin{figure}[h]
 	\centering
     \caption{Exibição de documento (meio)}
     \includegraphics[width=15cm]{Imagens/print-show-2.png}
+    \label{fig:doc-show-2}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
@@ -170,6 +173,7 @@ Uma vez que o documento é criado, sua visualização fica disponível para todo
 	\centering
     \caption{Exibição de documento (fim)}
     \includegraphics[width=15cm]{Imagens/print-show-3.png}
+    \label{fig:doc-show-3}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
@@ -229,3 +233,4 @@ A aplicação ainda possui algumas limitações em suas funcionalidades. A respe
 Além disso, a ferramenta não trata mudanças que possam ter ocorrido na fonte do código importado. Ou seja, uma vez importado, mudanças ocorridas no código disponível no GitHub não se refletem na aplicação.
 
 % IM: falar das vantagens e desvantagens? /\
+
