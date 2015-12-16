@@ -1,25 +1,24 @@
-\chapter{Métodos}
+\chapter{Metodologia}
 
-% IM: Melhorar isso
-Este trabalho prevê o desenvolvimento da ferramenta de documentação de implementação funcionalidades.
-
-As etapas do estudo foram:
+Este trabalho prevê o desenvolvimento da ferramenta de documentação de implementação funcionalidades. Este capítulo aborda principalmente as etapas de estudo de aplicações existentes, inquérito contextual e elicitação de requisitos.
 
 \section{Estudo de Aplicações Existentes}
 
-Foi feita uma busca por aplicações que realizem atividades semelhantes a ferramenta proposta, ou seja, criação e compartilhamento de notas textuais. Dentre as ferramentas encontradas, seguem:
+Foi feita uma busca por aplicações que realizem atividades semelhantes a ferramenta proposta, ou seja, criação e compartilhamento de notas textuais. O critério de seleção das ferramentas foi a popularidade entre usuários, principalmente entre desenvolvedores de software.
 
 \subsection{Evernote}
 
 Na época da elaboração deste trabalho, o Evernote\footnote{\url{https://www.evernote.com/}} era uma das ferramentas mais populares de criação de anotações privadas. Em 2014, atingiu a marca de mais de 100 milhões de usuários\footnote{\url{https://blog.evernote.com/blog/2014/05/13/evernote-reaches-100-million-users/}}. Ele possui um editor de texto com suporte a texto formatado, com listas, \textit{checkboxes}, \textit{\textit{links}}, anexos, tabelas. Os documentos criados na ferramenta (que possui clientes web, desktop e para diversas plataformas móveis) podem receber \textit{tags}, e ser colocados em pastas para melhor organização de modo a facilitar sua recuperação.
 
-% IM: Mostrar uma anotação do evernote?
-
 Documentos também podem ser compartilhados diretamente para outros usuários da ferramenta ou através de \textit{links} públicos (acessíveis para qualquer pessoa).
 
 Dentre suas limitações para o uso para a redação de tutoriais da área de desenvolvimento de código está a falta de suporte a exibição de código com \textit{syntax-highlighting}, ou seja, com formatação apropriada.
 
-% IM: Mostrar um exemplo de como código fica no evernote?
+\subsection{Wikis}
+
+Editadas e estruturadas colaborativamente, \textit{Wikis} são comummente utilizadas em equipes de desenvolvimento de software para o registro e tranmissão de conhecimento. Muitas oferecem suporte a exibição de código e linguagem de marcação.
+
+Com diversas possibilidades de uso, muitas vezes apresentam problemas na recuperação de informação devido a falta de catalogação e indexação precária por categorias ou assuntos (dependendo em certos casos que isso seja feito pelos próprios usuários).
 
 \subsection{GitHub e GitHub Gists}
 
@@ -27,15 +26,12 @@ Apesar de não ser sua principal proposta, o GitHub é muito utilizado por desen
 
 Estas anotações normalmente são utilizadas em arquivos ``Leia-me'' de projetos e descrevem informações relevantes sobre estes (instalação, como executar testes, como fazer uso do projeto, etc).
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
     \caption{Exemplo de arquivo ``Leia-me''}
     \includegraphics[width=15cm]{Imagens/print-readme.png}
 	\caption*{Fonte: GitHub (2015)}
 \end{figure}
-
-% https://github.com/rails/rails/blob/master/README.md
-% IM: a imagem é daí. Essa é a fonte ou ainda sou eu?
 
 Outra forma de se registrar anotações no GitHub é através de Gists\footnote{\url{https://gist.github.com}}. A comunidade de desenvolvimento de software comumente utiliza estes arquivos para registrar pequenos \textit{snippets} ou \textit{scripts} de código, com pouca ou nenhuma descrição sobre o mesmo.
 
@@ -43,11 +39,7 @@ Gists pertencem a somente um usuário (podendo ser públicos ou privados) e tamb
 
 Vale notar que esta linguagem de marcação possui suporte a \textit{syntax-highlighting}, formatando código de maneira clara.
 
-% IM: mostrar um exemplo de código com markdown aqui?
-
 Dentre as limitações das ferramentas acima citadas, está a precária indexação (repositórios do GitHub e Gists não possuem \textit{tags} ou qualquer outra forma de catalogação, por exemplo) dificultando a recuperação de informação relevante ao usuário.
-
-% IM: tá fraca essa parte das limitações?
 
 \subsection{Blogs e sites}
 
@@ -65,7 +57,7 @@ Dessa forma, levou-se em consideração as limitações e pontos fortes de cada 
 
 \section{Inquérito contextual}
 
-A partir da etapa anterior, o estudo para a concepção da ferramenta passou a levar em consideração requisitos e necessidades de desenvolvedores de software. O processo está descrito a seguir.
+A partir da etapa anterior, o estudo para a concepção da ferramenta passou a levar em consideração requisitos e necessidades de desenvolvedores de software. O processo, que consistiu na análise de perguntas feitas por equipes, está descrito a seguir.
 
 \subsection{Contexto}
 
@@ -73,14 +65,13 @@ Para a elaboração da ferramenta, houve participação da equipe de desenvolved
 
 O autor do trabalho atua na empresa há três anos e meio, atuando em atividades de gerência de equipes e mentoria de novos membros, além de na própria área de desenvolvimento de software. Nesse período, passaram pela empresa cerca de dezessete desenvolvedores com nível de conhecimento variado. Participaram do estudo oito desenvolvedores com experiência em média de dois anos na empresa.
 
-Além disso, o \textit{chat} utilizado por uma turma de Desenvolvimento de Sistemas Web ofertada no primeiro semestre de 2014 para alunos dos cursos de Bacharelado em Engenharia de Software e Bacharelado em Ciência da Computação foi analisado. A turma possuia um total de vinte e cinco alunos e seu projeto final envolvia a participação de todos colaborativamente sobre um mesmo projeto. A maioria dos alunos possuia pouca ou nenhuma experiência com a tecnologia utilizada na disciplina.
+Além disso, foram analisadas as conversas no \textit{chat} utilizado por uma turma de Desenvolvimento de Sistemas Web ofertada no primeiro semestre de 2014 para alunos dos cursos de Bacharelado em Engenharia de Software e Bacharelado em Ciência da Computação. A turma possuia um total de vinte e cinco alunos e seu projeto final envolvia a participação de todos colaborativamente sobre um mesmo projeto. A maioria dos alunos possuia pouca ou nenhuma experiência com a tecnologia utilizada na disciplina.
 
 \subsection{Inquérito}
-% IM: Coloco este título mesmo?
 
-Entrevistas não estruturadas e seções de \textit{brainstorm} foram feitas pelo autor com cinco participantes da empresa júnior mencionada. Além disso, por ser membro da empresa, o autor pôde observar o funcionamento interno da equipe. Procurou-se entender como se dava o fluxo da resolução de uma dúvida que algum desenvolvedor apresente.
+Entrevistas não estruturadas e seções de \textit{brainstorm} foram feitas pelo autor com cinco participantes da empresa júnior mencionada. Além disso, por ser membro da empresa, o autor pôde observar o funcionamento interno da equipe. Procurou-se entender como se dava o fluxo da resolução de uma dúvida que algum desenvolvedor apresentava.
 
-Foi feita a análise das perguntas postadas no \textit{chat} utilizado pela empresa no último ano bem como o \textit{chat} utilizado pelos alunos da disciplina de Desenvolvimento Web. Pôde-se concluir que as dúvidas postadas geralmente se enquadravam em alguma das seguintes categorias:
+Foi feita a análise caso a caso das perguntas postadas no \textit{chat} utilizado pela empresa no último ano bem como o \textit{chat} utilizado pelos alunos da disciplina de Desenvolvimento Web. Pôde-se concluir que as dúvidas postadas geralmente se enquadravam em alguma das seguintes categorias:
 
 \begin{enumerate}
   \item \textbf{Como}. Instruções sobre implementar uma determinada funcionalidade ou ação.
@@ -90,35 +81,37 @@ Foi feita a análise das perguntas postadas no \textit{chat} utilizado pela empr
   \item \textbf{Discrepância}. Solicitação de explicação sobre comportamento inesperado apresentado pelo código.
 \end{enumerate}
 
-Os trechos de conversas extraídas do \textit{chat} da empresa júnior ao longo deste trabalho e anexos exemplificam as categorias mencionadas.
+Trechos de conversas extraídas do \textit{chat} da empresa júnior estão presentes nas figuras \ref{fig:doubt-1} a \ref{fig:doubt-5} e exemplificam as categorias extraídas. Todos os participantes das conversas foram anonimizados utilizando cores. Os quadrados encontram-se sob avatares dos participantes enquanto os retângulos menores se econtram sob seus nomes de usuário. Um mesmo desenvolvedor pode apresentar diferentes cores em diferentes exemplos.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-    \caption{Dúvida do tipo 1}
+    \caption{Dúvida do tipo 1. Como}
+		\label{fig:doubt-1}
     \includegraphics[width=15cm]{Imagens/c-type-1-9-1.png}
 	\caption*{Fonte: Adaptado de Slack (2015)}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-    \caption{Dúvida do tipo 2}
+    \caption{Dúvida do tipo 2. Tomada de decisão}
+		\label{fig:doubt-2}
     \includegraphics[width=15cm]{Imagens/c-type-2-1-1.png}
 	\caption*{Fonte: Adaptado de Slack (2015)}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-    \caption{Dúvida do tipo 3}
+    \caption{Dúvida do tipo 3. Revisão de Código}
+		\label{fig:doubt-3}
     \includegraphics[width=15cm]{Imagens/c-type-3-1-1.png}
 	\caption*{Fonte: Adaptado de Slack (2015)}
 \end{figure}
 
-% IM: descobrir como fazer essa citação
-Estas categorias se enquadram dentro das dez categorias também encontradas por Treude et al.~\cite{Treude2011} em seu estudo sobre como desenvolvedores realizam perguntas no site de perguntas e respostas Stack Overflow.
+Estas categorias se enquadram dentro das dez categorias também encontradas por Treude et al.~\cite{Treude2011} em seu estudo sobre como desenvolvedores realizam perguntas no site de perguntas e respostas Stack Overflow. No estudo original foram encontradas um total de onze categorias. Optou-se apenas por selecionar apenas as cinco categorias em questão devido ao fato de as demais não terem sido encontradas com frequência dentro do conjunto de dúvidas estudado.
 
 \clearpage
 
-Além da análise das perguntas realizadas pelos desenvolvedores, foi feita uma análise sobre como estas eram respondidas no mesmo período. Para todos os casos citados, o fluxo de resolução do problema se dava na maioria dos casos da seguinte forma:
+Além da análise das perguntas realizadas pelos desenvolvedores, foi feita uma análise sobre como estas eram respondidas. Para todos os casos citados, o fluxo de resolução do problema se dava na maioria dos casos da seguinte forma:
 
 \begin{enumerate}[i]
   \item O desenvolvedor comunicava o problema (para todos os membros ou somente um) no \textit{chat} utilizado pela equipe.
@@ -129,28 +122,29 @@ Além da análise das perguntas realizadas pelos desenvolvedores, foi feita uma 
 \end{enumerate}
 
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-    \caption{Dúvida do tipo 4}
+    \caption{Dúvida do tipo 4. Erro}
+		\label{fig:doubt-4-1}
     \includegraphics[width=15cm]{Imagens/c-type-4-1-1.png}
 	\caption*{Fonte: Adaptado de Slack (2015)}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-    \caption{Dúvida do tipo 4 (continuação)}
+    \caption{Dúvida do tipo 4. Erro (continuação)}
+		\label{fig:doubt-4-2}
     \includegraphics[width=15cm]{Imagens/c-type-4-1-2.png}
 	\caption*{Fonte: Adaptado de Slack (2015)}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-    \caption{Dúvida do tipo 5}
+    \caption{Dúvida do tipo 5. Discrepância}
+		\label{fig:doubt-5}
     \includegraphics[width=15cm]{Imagens/c-type-5-2-1.png}
 	\caption*{Fonte: Adaptado de Slack (2015)}
 \end{figure}
-
-
 
 Para casos em que a resolução problema encontrado não era de conhecimento de nenhum membro da equipe (seja por falta de contato com o contexto ou até mesmo por esquecimento), o desenvolvedor realizava pesquisas em ferramentas de busca para encontrar tutoriais ou fóruns de discussão que o ajudassem a resolver o problema.
 
@@ -185,8 +179,4 @@ Com base nisso, partiu-se para a implementação da ferramenta, denominada Twydi
 
 A ferramenta então foi disponibilizada em dois servidores diferentes: um para uso da empresa júnior e de outros interessados e outro para uso dos alunos da disciplina de Desenvolvimento Colaborativo de Software ocorrida no segundo semestre de 2015. Os artefatos gerados em um servidor não estavam disponíveis no outro. Ao todo, quatorze artefatos foram produzidos ao longo de três semanas por onze diferentes autores, sendo sete artefatos produzidos por quatro membros da empresa júnior e sete produzidos por sete membros da disciplina em questão.
 
-Para avaliar a ferramenta, foi aplicado um questionário de satisfação. Ao todo o questionário possuia quinze perguntas e se encontra nos apêndices do trabalho. Foram obtidas oito respostas no questionário aplicado, sendo três por membros da empresa júnior e as demais por alunos da disciplina. 
-
-% IM: Verificar se já falei da disciplina antes desse parágrafo
-% IM: verificar se quantidade de perguntas está correta
-% IM: acredito que meus twydies estejam no meio dessas contas, bem como eu estou na quantidade de usuários. Preciso me excluir?
+Para avaliar a ferramenta, foi aplicado um questionário de satisfação. Ao todo o questionário possuia quinze perguntas e se encontra nos apêndices do trabalho. Foram obtidas oito respostas no questionário aplicado, sendo três por membros da empresa júnior e as demais por alunos da disciplina.
