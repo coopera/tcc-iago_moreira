@@ -10,25 +10,27 @@ A ferramenta é de código livre e uma versão em execução pode ser acessada u
 
 Na tela inicial da aplicação é possível ver uma lista com todos os documentos já criados. Cada documento é exibido com seu título, descrição, lista de \textit{tags} e autor (caso tenha se identificado durante a criação do documento), conforme apresentado nas figuras \ref{fig:doc-list-1} e \ref{fig:doc-list-2}.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Listagem de Documentos}
-    \includegraphics[width=15cm]{Imagens/print-lista-1.png}
+    \includegraphics[width=13cm]{Imagens/print-lista-1.png}
 		\label{fig:doc-list-1}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[b]
 	\centering
     \caption{Listagem de Documentos (parte inferior da página)}
 		\label{fig:doc-list-2}
-    \includegraphics[width=15cm]{Imagens/print-lista-2.png}
+    \includegraphics[width=13cm]{Imagens/print-lista-2.png}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
+\clearpage
+
 Ao fim da lista de documentos, é possível ver quantos documentos se encontram nela e também uma lista das \textit{tags} presentes, incluindo sua quantidade de ocorrências dentro do grupo de documentos exibidos, como pode ser visto na figura \ref{fig:doc-tags}.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Lista de \textit{tags}}
     \includegraphics[width=15cm]{Imagens/print-tags.png}
@@ -40,15 +42,16 @@ Ao fim da lista de documentos, é possível ver quantos documentos se encontram 
 \section{Criação de um Documento}
 
 Qualquer usuário da aplicação pode criar um documento, mesmo sem estar autenticado na mesma. A figura \ref{fig:doc-new} mostra a tela de criação de um documento.
-% IM: tá ruim esse parágrafo, eu sei.
 
-\begin{figure}[h!]
+\begin{figure}[hb]
 	\centering
     \caption{Novo documento}
-    \includegraphics[width=15cm]{Imagens/print-new-twydi.png}
+    \includegraphics[width=12cm]{Imagens/print-new-twydi.png}
 		\label{fig:doc-new}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
+
+\clearpage
 
 \subsection{Elementos de um documento}
 
@@ -84,7 +87,7 @@ O arquivo é exibido utilizando uma formatação própria da linguagem, facilita
 
 A partir dessa estrutura de URLs, foi elaborado um mecanismo para importar código no editor de texto da implementação toda vez que um \textit{link} do GitHub é colado. Uma descrição sobre os tipos de importações possíveis e seus respectivos resultados encontra-se na Tabela 2.
 
-\begin{table}[]
+\begin{table}[ht]
 \centering
     \caption{Tipos de importação suportadas pela aplicação}
     \label{my-label}
@@ -101,16 +104,19 @@ A partir dessa estrutura de URLs, foi elaborado um mecanismo para importar códi
 \caption*{Fonte: O autor}
 \end{table}
 
+\clearpage
+
 Exemplos dos resultados de cada importação podem ser vistos nas figuras \ref{fig:doc-import-1}, \ref{fig:doc-import-2}, \ref{fig:doc-import-3} e \ref{fig:doc-import-4}.
-\begin{figure}[h!]
+
+\begin{figure}[hb]
 	\centering
     \caption{Importação de Arquivo}
-    \includegraphics[width=15cm]{Imagens/import-file.png}
+    \includegraphics[width=13cm]{Imagens/import-file.png}
 		\label{fig:doc-import-1}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Importação de Linha de Arquivo}
     \includegraphics[width=15cm]{Imagens/import-line.png}
@@ -118,26 +124,28 @@ Exemplos dos resultados de cada importação podem ser vistos nas figuras \ref{f
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Importação de Múltiplas Linhas de Arquivo}
-    \includegraphics[width=15cm]{Imagens/import-lines.png}
+    \includegraphics[width=13cm]{Imagens/import-lines.png}
 		\label{fig:doc-import-3}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Importação de \textit{Commit}}
-    \includegraphics[width=15cm]{Imagens/import-commit.png}
+    \includegraphics[width=13cm]{Imagens/import-commit.png}
 		\label{fig:doc-import-4}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
-\begin{figure}[h!]
+\clearpage
+
+\begin{figure}[ht]
 	\centering
     \caption{Importação de \textit{Pull Request}}
-    \includegraphics[width=15cm]{Imagens/import-pr.png}
+    \includegraphics[width=13cm]{Imagens/import-pr.png}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
@@ -164,7 +172,7 @@ Dessa forma é permitido aos autores maior clareza e poder de expressão com rel
 % CITAR FIGURA X, FIGURA Y
 Uma vez que o documento é criado, sua visualização fica disponível para todos os usuários. As figuras \ref{fig:doc-show-1}, \ref{fig:doc-show-2} e \ref{fig:doc-show-3} mostram como um documento fica exibido dentro da aplicação.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Exibição de documento (início)}
     \includegraphics[width=15cm]{Imagens/print-show-1.png}
@@ -172,22 +180,23 @@ Uma vez que o documento é criado, sua visualização fica disponível para todo
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
-
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Exibição de documento (meio)}
-    \includegraphics[width=15cm]{Imagens/print-show-2.png}
+    \includegraphics[width=13cm]{Imagens/print-show-2.png}
     \label{fig:doc-show-2}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[hb]
 	\centering
     \caption{Exibição de documento (fim)}
-    \includegraphics[width=15cm]{Imagens/print-show-3.png}
+    \includegraphics[width=13cm]{Imagens/print-show-3.png}
     \label{fig:doc-show-3}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
+
+\clearpage
 
 Enfatiza-se que o elemento de implementação é propriamente renderizado de acordo com a marcação utilizada pelo autor.
 
@@ -205,7 +214,9 @@ Utilizando a barra de busca que se encontra na página que lista todos os docume
 
 Além disso, é possível visualizar todos os documentos criados por um usuário ao se clicar no avatar do mesmo em qualquer tela do sistema. Um exemplo da filtragem de documentos por usuário pode ser visualizado na figura \ref{fig:doc-by-user}.
 
-\begin{figure}[h!]
+\clearpage
+
+\begin{figure}[ht]
 	\centering
     \caption{Lista de documentos de um usuário}
     \includegraphics[width=15cm]{Imagens/print-by-user.png}
@@ -223,7 +234,7 @@ Além disso, usuários logados podem utilizar a funcionalidade de ``Curtir'' doc
 
 Usuários autenticados podem utilizar esta funcionalidade, que permite adicionar uma ``curtida'' a um documento. Ao fazer isso, todos os outros usuários da aplicação podem ver que aquele desenvolvedor ``curtiu'' aquele documento tanto na página do documento em si quando na página de listagem de documentos. Figuras \ref{fig:doc-like-1} e \ref{fig:doc-like-2} ilustram a funcionalidade.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Visualização dos ``Curtir'' em um documento}
     \includegraphics[width=15cm]{Imagens/print-like-1.png}
@@ -231,13 +242,15 @@ Usuários autenticados podem utilizar esta funcionalidade, que permite adicionar
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Visualização dos ``Curtir'' na lista de documentos}
     \includegraphics[width=15cm]{Imagens/print-like-2.png}
 		\label{fig:doc-like-2}
 	\caption*{Fonte: O autor (2015)}
 \end{figure}
+
+\clearpage
 
 Esta funcionalidade permite ao usuário informar que o documento curtido foi útil para ele de alguma forma ou que pode ser útil para outros usuários, estimulando sua consulta por estes.
 

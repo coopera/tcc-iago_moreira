@@ -26,10 +26,10 @@ Apesar de não ser sua principal proposta, o GitHub é muito utilizado por desen
 
 Estas anotações normalmente são utilizadas em arquivos ``Leia-me'' de projetos e descrevem informações relevantes sobre estes (instalação, como executar testes, como fazer uso do projeto, etc).
 
-\begin{figure}[h!]
+\begin{figure}[!b]
 	\centering
     \caption{Exemplo de arquivo ``Leia-me''}
-    \includegraphics[width=15cm]{Imagens/print-readme.png}
+    \includegraphics[width=10cm]{Imagens/print-readme.png}
 	\caption*{Fonte: GitHub (2015)}
 \end{figure}
 
@@ -83,7 +83,7 @@ Foi feita a análise caso a caso das perguntas postadas no \textit{chat} utiliza
 
 Trechos de conversas extraídas do \textit{chat} da empresa júnior estão presentes nas figuras \ref{fig:doubt-1} a \ref{fig:doubt-5} e exemplificam as categorias extraídas. Todos os participantes das conversas foram anonimizados utilizando cores. Os quadrados encontram-se sob avatares dos participantes enquanto os retângulos menores se econtram sob seus nomes de usuário. Um mesmo desenvolvedor pode apresentar diferentes cores em diferentes exemplos.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Dúvida do tipo 1. Como}
 		\label{fig:doubt-1}
@@ -91,7 +91,7 @@ Trechos de conversas extraídas do \textit{chat} da empresa júnior estão prese
 	\caption*{Fonte: Adaptado de Slack (2015)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Dúvida do tipo 2. Tomada de decisão}
 		\label{fig:doubt-2}
@@ -99,7 +99,7 @@ Trechos de conversas extraídas do \textit{chat} da empresa júnior estão prese
 	\caption*{Fonte: Adaptado de Slack (2015)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 	\centering
     \caption{Dúvida do tipo 3. Revisão de Código}
 		\label{fig:doubt-3}
@@ -107,9 +107,33 @@ Trechos de conversas extraídas do \textit{chat} da empresa júnior estão prese
 	\caption*{Fonte: Adaptado de Slack (2015)}
 \end{figure}
 
-Estas categorias se enquadram dentro das dez categorias também encontradas por Treude et al.~\cite{Treude2011} em seu estudo sobre como desenvolvedores realizam perguntas no site de perguntas e respostas Stack Overflow. No estudo original foram encontradas um total de onze categorias. Optou-se apenas por selecionar apenas as cinco categorias em questão devido ao fato de as demais não terem sido encontradas com frequência dentro do conjunto de dúvidas estudado.
+\begin{figure}[ht]
+	\centering
+    \caption{Dúvida do tipo 4. Erro}
+		\label{fig:doubt-4-1}
+    \includegraphics[width=15cm]{Imagens/c-type-4-1-1.png}
+	\caption*{Fonte: Adaptado de Slack (2015)}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+    \caption{Dúvida do tipo 4. Erro (continuação)}
+		\label{fig:doubt-4-2}
+    \includegraphics[width=15cm]{Imagens/c-type-4-1-2.png}
+	\caption*{Fonte: Adaptado de Slack (2015)}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+    \caption{Dúvida do tipo 5. Discrepância}
+		\label{fig:doubt-5}
+    \includegraphics[width=15cm]{Imagens/c-type-5-2-1.png}
+	\caption*{Fonte: Adaptado de Slack (2015)}
+\end{figure}
 
 \clearpage
+
+Estas categorias se enquadram dentro das dez categorias também encontradas por Treude et al.~\cite{Treude2011} em seu estudo sobre como desenvolvedores realizam perguntas no site de perguntas e respostas Stack Overflow. No estudo original foram encontradas um total de onze categorias. Optou-se apenas por selecionar apenas as cinco categorias em questão devido ao fato de as demais não terem sido encontradas com frequência dentro do conjunto de dúvidas estudado.
 
 Além da análise das perguntas realizadas pelos desenvolvedores, foi feita uma análise sobre como estas eram respondidas. Para todos os casos citados, o fluxo de resolução do problema se dava na maioria dos casos da seguinte forma:
 
@@ -120,31 +144,6 @@ Além da análise das perguntas realizadas pelos desenvolvedores, foi feita uma 
   \item Caso novas dúvidas surgissem durante a implementação, os demais membros da equipe tentavam dar recomendações mais precisas ou oferecer outros exemplos e \textit{links} úteis.
   \item O problema era solucionado.
 \end{enumerate}
-
-
-\begin{figure}[h!]
-	\centering
-    \caption{Dúvida do tipo 4. Erro}
-		\label{fig:doubt-4-1}
-    \includegraphics[width=15cm]{Imagens/c-type-4-1-1.png}
-	\caption*{Fonte: Adaptado de Slack (2015)}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-    \caption{Dúvida do tipo 4. Erro (continuação)}
-		\label{fig:doubt-4-2}
-    \includegraphics[width=15cm]{Imagens/c-type-4-1-2.png}
-	\caption*{Fonte: Adaptado de Slack (2015)}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-    \caption{Dúvida do tipo 5. Discrepância}
-		\label{fig:doubt-5}
-    \includegraphics[width=15cm]{Imagens/c-type-5-2-1.png}
-	\caption*{Fonte: Adaptado de Slack (2015)}
-\end{figure}
 
 Para casos em que a resolução problema encontrado não era de conhecimento de nenhum membro da equipe (seja por falta de contato com o contexto ou até mesmo por esquecimento), o desenvolvedor realizava pesquisas em ferramentas de busca para encontrar tutoriais ou fóruns de discussão que o ajudassem a resolver o problema.
 
