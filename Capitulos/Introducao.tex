@@ -1,24 +1,8 @@
 \chapter{Introdução}
 
-Trabalhadores do conhecimento necessitam estar em constante aprendizado, de modo a proporcionar um melhor desempenho para toda organização~\cite{Druker1993}. Desenvolvedores de software se enquadram neste conjunto e constantemente necessitam reutilizar o conhecimento aprendido por outros desenvolvedores~\cite{Wiig2003}.
-Assim, é esperado que os desenvolvedores melhorem continuamente seu trabalho em um processo em culmina na melhora significativa da sua empresa~\cite{Kavitha2011}. Essa melhoria constante dos membros de uma equipe está amplamente relacionada com o conceito de organizações que aprendem, onde seus membros estão em constante processo de melhoria e expansão de consciência e capacidades~\cite{Senge2014}.
+Processos e metodologias de desenvolvimento estão entre os principais temas da pesquisa em Engenharia de Software [carece de fontes]. Um processo, quando executado de forma correta, tem o impacto na melhoria da qualidade do software produzido e na redução de custos de projeto. Nesse contexto, um dos desafios de empresas de software é o de motivar membros do time de desenvolvimento a aderirem a boas práticas, como a produção adequada de testes, a melhor comunicação entre membros do time e o comprometimento com metas de produção [2].
 
-Em equipes de desenvolvimento de software, o reuso de conhecimento ocorre utilizando uma variedade de artefatos, como código fonte, requisitos, modelos, dados e padrões~\cite{Levy2009}, bem como através de interações face a face, comunicação escrita e também via o repasse de referências de documentação, links, dentre outros~\cite{Storey2014}~\cite{Olson2000}~\cite{CubraniC2004}.
-
-Neste quesito, entra a gerência de conhecimento, encarregada da elicitação, armazenamento, gerenciamento e reuso do conhecimento~\cite{Levy2009}.
-Dentre as formas típicas de reuso, se encontra, por exemplo, como se deu a implementação de uma determinada funcionalidade em um determinado projeto de software.
-
-A troca de informações é um mecanismo fundamental para que o reuso de conhecimento ocorra de maneira eficiente em equipes de desenvolvimento. Desenvolvedores, principalmente em fase de aprendizado de uma determinada tecnologia, comumente passam por situações e problemas semelhantes. Quando se deparam com algum tipo de adversidade, procuram por alguma fonte de informação capaz de auxiliá-los por tal problema. Existe então o desperdício de tempo de se recuperar tal informação (muitas vezes, interferindo nas atividades de um colega de trabalho) para se resolver um problema que já é de conhecimento da equipe dado alguma experiência anterior.
-
-Com a falta de uma boa gerência de conhecimento, é comum desenvolvedores implementarem funcionalidades semelhantes em diferentes contextos usando abordagens \textit{ad-hoc}~\cite{SangMok2011}. Essas novas implementações, principalmente se feitas por desenvolvedores menos experientes, tendem a ser menos otimizadas e elegantes que soluções já previamente implementadas pela equipe, podendo gerar um débito técnico\footnote{Metáfora para as eventuais consequências de uma implementação não apropriada de determinada tarefa e que pode causar problemas para a manutenção do software no futuro.} a longo prazo.
-
-Desenvolvedores mais experientes em um determinado projeto tendem a atuar como mentores~\cite{CubraniC2004} e tal ato, como atividade de gerência de conhecimento, tende a consumir recursos como o tempo dos citados mentores~\cite{Wiig2003}. Um dos pilares da gerência de conhecimento é a melhoria da produtividade através do compartilhamento e transferência eficiente de conhecimento, que tende a consumir tempo e às vezes sendo até impossível de se realizar~\cite{Levy2009}.
-
-Muitas das interações entre desenvolvedores são informais e não há registro que possa ser consultado para propocionar o reuso do conhecimento trocado~\cite{Olson2000}. Um agravante típico é a frequente rotatividade de membros em equipes. Nesses casos, a saída de um membro da equipe que detém determinado conhecimento pode prejudicar toda organização. De fato, a falta de uma abordagem mais sistemática para proporcionar o reuso de conhecimento pode estar associada ao fracasso de projetos em organizações~\cite{Hall2008}.
-
-Assim, a elaboração de uma ferramenta capaz de agregar referências de código a soluções pode trazer enormes benefícios a equipes de desenvolvimento~\cite{CubraniC2004}. Este estudo propôs a elaboração de tal ferramenta baseando-se principalmente nas limitações existentes em ferramentas de propósito similar. Esta atua como um catálogo, agregando referências de código, informações externas e comentários fornecidos por desenvolvedores da equipe com o intuito de auxiliar outros desenvolvedores a buscar em fontes da própria equipe (ou de confiança da mesma) como se deram implementações de funcionalidades já feitas em outros projetos.
-
-Vale reforçar que a ferramenta procura melhorar a gestão de conhecimento explícito, ou seja, aquele que pode ser registrado de alguma maneira.
+A gamificação é o uso de elementos de design de jogos em contextos que não sejam jogos [1], e tem sido usada com sucesso em uma variedade de aplicações, dentre elas, sites da Web cujo público-alvo são os desenvolvedores de software. Por exemplo, o site Stack Overflow facilita a troca de conhecimento entre os desenvolvedores de software ao oferecer um serviço que permite com que usuários postem perguntas que são respondidas por outros usuários. O site usa gamificação para incentivar e premiar a participação da comunidade. Por exemplo, usuários recebem pontos por enviarem respostas úteis, eventualmente ganhando insígnias, ou badges, pelos seus serviços e contribuições à comunidade. Em sites como Coderwall e Coderbits, usuários ganham badges por conquistas no âmbito do desenvolvimento de software livre, o que estimula o aprendizado de novas tecnologias entre os desenvolvedores de software (Singer 2013). Este trabalho propõe o uso de mecânicas de jogos, ou gamificação, com o intuito de melhorar processos de desenvolvimento de software em empresas e times de desenvolvimento. 
 
 \section{Exemplo de Uso da Ferramenta}
 
@@ -28,20 +12,15 @@ Outros desenvolvedores, a partir de então, podem recorrer diretamente a ferrame
 
 \section{Objetivos e Perguntas de Pesquisa}
 
-Este estudo descreve a elaboração de tal ferramenta com o objetivo de melhorar o compartilhamento de informação em equipes de desenvolvimento de software e sua avaliação em dois contextos. O primeiro é o de uma equipe real de desenvolvimento de software composta por alunos da Universidade Federal do Rio Grande do Norte e o segundo contexto é o de alunos de graduação da área de computação da mesma universidade enquanto cursavam a disciplina de Desenvolvimento Colaborativo de Software no segundo semestre de 2015. A ferramenta foi utilizada para permitir que os alunos se auxiliassem durante o desenvolvimento do projeto final de disciplina.
-
-O objetivo geral deste trabalho é responder as seguintes perguntas:
+Este trabalho tem por objetivo principal analisar e compreender como a gamificação pode contribuir para melhoria de processos de software em empresas e times de desenvolvimento corporativos, visando responder às seguintes perguntas de pesquisa:
 
 \begin{enumerate}
-  \item A ferramenta proposta oferece suporte à maneira como conhecimento é trocado em equipes de software?
-  \item Que outras funcionalidades podem ser agregadas a ferramenta para melhorar este suporte, caso exista?
-  \item Quais são os casos potenciais de uso da ferramenta segundo os desenvolvedores?
+  \item Como projetar mecânicas de jogos que contribuam para melhoria de processos de desenvolvimento de software?
+  \item Como mecânicas de jogos podem encorajar desenvolvedores em empresas de software a aderirem a boas práticas?
+  \item Qual é o processo para construção, teste e implantação de mecânicas de jogos em empresas de software?
+  \item Quais são os desafios e limitações do uso de mecânicas de jogos em empresas de software?
 \end{enumerate}
-
-Para responder as perguntas de pesquisa propostas, foi aplicado um questionário com usuários de ferramenta.
-
-Concluiu-se que, para a pergunta de pesquisa 1, sim, a ferramenta oferece suporte à troca de conhecimento entre desenvolvedores. Para a pergunta de pesquisa 2, um melhor suporte a pré-visualização e formatação e dos documentos pode aprimorar o suporte existente. Para a pergunta de pesquisa 3, os participantes informaram que a divulgação de tutoriais ou soluções para suas equipes e registro pessoal sobre como o próprio desenvolvedor solucionou determinado problema seriam casos de uso nos quais utilizariam a ferramenta em sua rotina.
 
 \section{Estrutura do Trabalho}
 
-O Capítulo 2 apresenta uma revisão da literatura relacionada a este trabalho, focando no uso de mídias pelo engenheiro de software, os efeitos da rotatividade em equipes de software, além de gestão e recuperação de informação. O Capítulo 3 explica em detalhes os procedimentos tomados para a construção e análise da ferramenta tendo como base os conhecimentos citados no capítulo anterior. O Capítulo 4 descreve em detalhes a ferramenta elaborada. O Capítulo 5 realiza a análise dos resultados dos experimentos bem como discute seus resultados. O Capítulo 6 aborda as considerações finais sobre o trabalho.
+O Capítulo 2 apresenta a fundamentação teórica relacionada a este trabalho, focando em mineração de repositórios de software, os conceitos de \textit{awareness} em equipes de software, além de gestão e recuperação de informação. O Capítulo 3 explica em detalhes os procedimentos tomados para a construção e análise da ferramenta tendo como base os conhecimentos citados no capítulo anterior. O Capítulo 4 descreve em detalhes a ferramenta elaborada. O Capítulo 5 realiza a análise dos resultados dos experimentos bem como discute seus resultados. O Capítulo 6 aborda as considerações finais sobre o trabalho.
